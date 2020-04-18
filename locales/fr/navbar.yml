@@ -1,0 +1,16 @@
+fr:
+  navbar:
+    pricing: "Tarifs"
+    why: "Pourquoi ?"
+    badge_generator: "Générateur de badge"
+    printing: "Imprimer soi-même"
+    ressources: "Ressources"
+    blog: "Blog"
+    blog_desc: "Un peu de lecture"
+    faq: "FAQ"
+    faq_desc: "Besoin d'aide ?"
+    testimonials: "Témoignages clients"
+    testimonials_desc: "Ils nous font confiance"
+    contact: "Contact"
+    cta: "Commencer"
+    soon: "Prochainement"

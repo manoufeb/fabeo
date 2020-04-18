@@ -1,0 +1,25 @@
+fr:
+  contact:
+    meta:
+      title: "Contact | Badge en ligne"
+      desc: "Notre équipe sera ravie de répondre à vos questions d’ordre commercial ou technique !"
+    banner:
+      h1: "Nous sommes là pour vous aider ! 👋"
+      desc: "Une question technique, une demande de devis ou encore un partenariat, notre équipe est à votre écoute."
+      message_us: "Envoyez-nous un message"
+      start_a_chat: "Lancer le chat !"
+      call_us: "Appelez nous"
+      phone_number: "06 64 09 86 29"
+      email_us: "Envoyez nous un email"
+      email: "contact@badgeenligne.fr"
+    form:
+      title: "Contactez-nous"
+      desc: "Vous souhaitez contacter notre équipe ? Nous sommes à votre disposition."
+      full_name: "Prénom et Nom"
+      full_name_placeholder: "Pierre Dupont"
+      email: "Email"
+      email_placeholder: "p.dupont@loreal.fr"
+      message: "Message"
+      message_placeholder: "En quoi pouvons-nous vous aider ?"
+      cta: "Envoyer"
+

@@ -1,0 +1,54 @@
+<% name = name || 'empty' %>
+<% content_for(:title, t("faq.#{name}.meta.title")) %>
+<% content_for(:desc, t("faq.#{name}.meta.desc")) %>
+<% content_for(:footer_color, 'bg-light') %>
+<!-- BREADCRUMB
+================================================== -->
+<nav class="bg-gray-200">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb breadcrumb-scroll">
+          <li class="breadcrumb-item">
+            <%= link_to 'FAQ', 'faq', class:'ftext-gray-700' %>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <%= t("faq.#{name}.h1") %>
+          </li>
+        </ol>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</nav>
+
+<%= partial "faq/#{name}" %>
+
+<!-- CTA
+================================================== -->
+<section class="mt-12 pt-7 pt-md-10 bg-light">
+  <div class="container pb-6 pb-md-8 border-bottom">
+    <div class="row align-items-center">
+      <div class="col-12 col-md">
+
+        <!-- Heading -->
+        <h3 class="mb-1">
+          <%= t('faq.cta.title') %>
+        </h3>
+
+        <!-- Text -->
+        <p class="font-size-lg text-muted mb-6 mb-md-0">
+          <%= t('faq.cta.desc') %>
+        </p>
+
+      </div>
+      <div class="col-12 col-md-auto">
+        <button onclick="$crisp.push(['do', 'chat:open'])" class="btn btn-primary lift"><%= t('faq.cta.chat') %><i class="text-center fe fe-message-circle ml-3"></i></button>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+

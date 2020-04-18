@@ -1,0 +1,164 @@
+<% content_for(:title, t('faq.meta.title')) %>
+<% content_for(:desc, t('faq.meta.desc')) %>
+<% content_for(:footer_color, 'bg-dark') %>
+
+<!-- WELCOME
+================================================== -->
+<section data-jarallax data-speed=".8" class="pt-10 pb-11 py-md-14 overlay overlay-black overlay-60 bg-cover" style="background-image: url(../images/covers/cover-4.jpg);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center">
+
+        <!-- Heading -->
+        <h1 class="display-2 font-weight-bold text-white">
+          <%= t('faq.h1') %>
+        </h1>
+
+        <!-- Text -->
+        <p class="lead text-white-75 mb-0">
+          <%= t('faq.desc') %>
+        </p>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+<!-- SHAPE
+================================================== -->
+<div class="position-relative">
+  <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+    <%= include_svg "shapes/curves/curve-1.svg" %>
+  </div>
+</div>
+
+<!-- CATEGORIES
+================================================== -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <!-- Form -->
+        <form class="rounded shadow mt-n6 mb-4">
+          <div class="input-group input-group-lg">
+
+            <!-- Prepend -->
+            <div class="input-group-prepend">
+              <span class="input-group-text border-0 pr-1">
+                <i class="fe fe-search"></i>
+              </span>
+            </div>
+
+            <!-- Input -->
+            <input type="text" id="myinput" class="form-control border-0 px-1" aria-label="Search for your issue..." onkeyup="searchFunction()" placeholder="<%= t('faq.search') %>">
+
+          </div>
+        </form>
+
+        <!-- Text -->
+        <div class="row align-items-center mb-6 mb-md-8">
+          <div class="col-auto">
+
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-muted mb-0">
+              <%= t('faq.suggestion') %>
+            </h6>
+
+          </div>
+          <div class="col ml-n5">
+
+            <!-- Text -->
+            <p class="font-size-sm text-muted mb-0">
+              <%= t('faq.examples') %>
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+
+      </div>
+    </div> <!-- / .row -->
+
+
+    <ul class="row list-unstyled" id="mywrapper">
+      <% t('faq.articles').each do |article| %>
+        <li class="col-12 col-md-6 col-lg-4">
+
+          <!-- Card -->
+          <a href="<%= article[:url] %>" id="mycard" class="card card-border border-<%= article[:color] %> shadow-lg mb-6 mb-md-8 lift lift-lg">
+            <div class="card-body text-center">
+
+              <div class="icon-circle bg-<%= article[:color] %> text-white mb-5">
+                <i class="fe fe-<%= article[:icon] %>"></i>
+              </div>
+
+              <!-- Heading -->
+              <h4 class="font-weight-bold">
+                <%= article[:title] %>
+              </h4>
+
+            </div>
+          </a>
+        </li>
+      <% end %>
+    </u> <!-- / .row -->
+  </div>
+</section>
+
+<!-- INFO
+================================================== -->
+<section class="mb-8 py-7 py-md-12" id="info">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4 text-center border-right border-gray-300">
+
+        <!-- Heading -->
+        <h6 class="text-uppercase text-gray-700 mb-1">
+          <%= t('contact.banner.message_us') %>
+        </h6>
+
+        <!-- Link -->
+        <div class="mb-5 mb-md-0">
+          <a class="h4 text-primary cursor-pointer" onclick="$crisp.push(['do', 'chat:open'])"><%= t('contact.banner.start_a_chat') %></a>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-4 text-center border-right border-gray-300">
+
+        <!-- Heading -->
+        <h6 class="text-uppercase text-gray-700 mb-1">
+          <%= t('contact.banner.call_us') %>
+        </h6>
+
+        <!-- Link -->
+        <div class="mb-5 mb-md-0">
+          <a href="tel:<%= t('contact.banner.phone_number') %>" class="h4">
+          <%= t('contact.banner.phone_number') %>
+          </a>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-4 text-center">
+
+        <!-- Heading -->
+        <h6 class="text-uppercase text-gray-700 mb-1">
+          <%= t('contact.banner.email_us') %>
+        </h6>
+
+        <!-- Link -->
+        <a href="mailto:<%= t('contact.banner.email') %>" class="h4">
+          <%= t('contact.banner.email') %>
+        </a>
+
+      </div>
+    </div> <!-- / .row -->
+  </div>
+</section>
+
+<!-- SHAPE
+================================================== -->
+<div class="position-relative">
+  <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+    <%= include_svg "shapes/curves/curve-1.svg" %>
+  </div>
+</div>

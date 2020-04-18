@@ -1,0 +1,28 @@
+fr:
+  faq:
+    meta:
+      title: "FAQ | Badge en ligne"
+      desc: "Rubrique d'aide de Badges en Ligne : Badges Conférences - Badges Séminaires - Badges Salons -  Badges événements"
+    h1: "Besoin d'aide ?"
+    desc: "Nous sommes là pour vous aider à mieux utiliser Badge en Ligne. Voyons d'abord si nous avons une solution dans notre documentation."
+    search: "Rechercher un article"
+    suggestion: "Suggestions"
+    examples: "Impression, Formats, Papiers, Facture, Expédition..."
+    cta:
+      title: "Vous ne trouvez pas ce que vous cherchez ?"
+      desc: "Notre formidable équipe de serviceclient est là pour vous !"
+      chat: "Contactez le support"
+
+    articles:
+      - url: "comment-imprimer-les-badges-sur-son-imprimante"
+        title: "Comment imprimer les badges sur son imprimante ?"
+        color: "primary"
+        icon: "printer"
+      - url: "quand-vais-je-recevoir-ma-facture"
+        title: "Quand vais-je reçevoir ma facture ?"
+        color: "warning"
+        icon: "credit-card"
+      - url: "quelles-options-d-expedition-avez-vous"
+        title: "Quelles options d'expédition avez-vous ?"
+        color: "info"
+        icon: "box"

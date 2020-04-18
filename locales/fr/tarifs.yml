@@ -1,0 +1,32 @@
+fr:
+  tarifs:
+    meta:
+      title: "Tarifs badges nominatifs pour évènements | Badge en Ligne"
+      desc: "Tarifs pour vos badges nominatifs pour évènements. Sans frais cachés, sans déception, des prix simples et transparents."
+    banner:
+      h1: "Tarifs simples et transparents"
+      desc: "Avec des badges à imprimer vous-même ou des badges adhésifs / autocollants livrés directement chez vous, Badge en Ligne vous propose des prix simples et transparents pour faciliter l'organisation de vos évènements, conférences, salons et séminaires."
+    faq:
+      label: "FAQ"
+      title: "Questions fréquentes"
+      desc: "Laissez-nous vous aider à répondre aux questions les plus courantes que vous pourriez avoir."
+      question_1: "Quels sont vos tarifs d'expédition et votre délai de livraison ?"
+      answer_1: "La livraison est gratuite en France métropolitaine. Vous serez livré en 3 jours ouvrables."
+      question_2: "Quel est le format des badges nominatifs adhésifs/autocollants ?"
+      answer_2: "Nous vous livrerons des badges de 105mm de large et 70mm de hauteur (105mmx70mm)."
+      question_3: "Quels formats sont les formats pour les badges pdf à imprimer chez soi ?"
+      answer_3: "Nous proposons 4 formats pour les badges pdf : 60x90 - 70x105 - 50x80 - 148x105 (A6)."
+      question_4: "Quel type d'imprimante est compatible pour les badges PDF ?"
+      answer_4: "Toutes les imprimantes sont compatibles !"
+      question_5: "Es-ce possible de tester l'éditeur de badge ?"
+      answer_5: "Bien sûr ! Il n'est pas nécéssaire de créer un compte ou même de mettre sa carte bancaire pour tester l'éditeur de badges nominatifs !"
+      question_6: "Puis-je imprimer moi-même sur des étiquettes adhésives ? "
+      answer_6: "Oui bien sûr ! Vous devez choisir le format 70x105mm ou 50x80mm. Pour le format 70x105mm vous pouvez acheter le papier  <a href='https://www.amazon.fr/dp/B00TPG53YI/ref=cm_sw_em_r_mt_dp_U_Zh87Db0ZYJA92'>ici</a> et pour le format 50x80mm <a href='https://www.amazon.fr/dp/B07N192CJW/ref=cm_sw_em_r_mt_dp_U_Cj87Db6EWRFVR'>ici</a> ou <a href='https://www.amazon.fr/dp/B004E0ZW9G/ref=cm_sw_em_r_mt_dp_U_pk87DbBM851BY'>ici</a>. "
+    testimonials:
+      testimonial_1:
+        desc: "“Simple, flexible et rapide. Tous les ingrédients recherchés pour les gestionnaires d'événements, c'est pour ça que nous avons choisi de travailler avec Badge en Ligne.”"
+        author: "Tatiana, Partnerships Manager"
+      testimonial_2:
+        desc: "“Nous avons gagné un temps précieux pour chaque organisation d'évènement, l'application est très facile à prendre en main. Un service de qualité et une équipe au top !”"
+        author: "Max, Manager Field Marketing"
+

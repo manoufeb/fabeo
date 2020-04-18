@@ -1,0 +1,34 @@
+/**
+ * Custom variables followed by theme variables followed by Bootstrap variables
+ * to ensure cascade of styles.
+ */
+
+// Font
+@import '../fonts/Feather/feather.css';
+
+// Libs
+@import '../javascripts/libs/flickity/dist/flickity.min.css';
+@import '../javascripts/libs/flickity-fade/flickity-fade.css';
+@import '../javascripts/libs/aos/dist/aos.css';
+@import '../javascripts/libs/highlightjs/styles/vs2015.css';
+
+// Bootstrap functions
+@import 'bootstrap/functions';
+
+// Theme functions
+@import 'theme/functions';
+
+// Custom variables
+@import 'user-variables';
+
+// Theme variables
+@import 'theme/variables';
+
+// Bootstrap core
+@import 'bootstrap/bootstrap';
+
+// Theme core
+@import 'theme/theme';
+
+// Custom core
+@import 'user';

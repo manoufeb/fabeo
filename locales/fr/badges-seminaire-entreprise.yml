@@ -1,0 +1,42 @@
+fr:
+  badges-seminaire-entreprise:
+    meta:
+      title: "Badges Séminaire d'entreprise | Badge en Ligne"
+      desc: "Badges nominatifs pour séminaire d'entreprise. Personnalisable en ligne en moins de 2 minutes, distribuez à vos participants des badges professionnels !"
+    banner:
+      h1: "Badges pour séminaire d'entreprise"
+      desc: "Pour vos séminaires d'entreprise, proposez des badges nominatifs personnalisés à vos participants et facilitez les interractions !"
+    section-1:
+      label: "Solution pour badges de séminaires"
+      title: "Une solution en ligne <span class='text-primary'>simple et efficace</span> pour créér vos badges !"
+      desc: "Grâce à notre éditeur en ligne très facile d'utilisation, 2 minutes vous suffiront à faire vos badges nominatifs."
+      features:
+      - title: "Importez"
+        desc: "Importez votre liste de participants depuis un fichier Excel, CSV ou Google sheets"
+        icon: "Files/Cloud-upload"
+      - title: "Editez"
+        desc: "Utilisez notre éditeur en ligne pour designer un badge à l’image de votre événement."
+        icon: "Text/Edit-text"
+      - title: "Imprimez ou faites-vous livrez"
+        desc: "Imprimez directement vos badges. Vous avez simplement besoin d'une imprimante standard. Nous pouvons aussi imprimer pour vous et vous livrer en 3 jours ouvrables !"
+        icon: "Devices/Printer"
+    section-2:
+      label: "Badges noms prénoms"
+      title: "Des badges nominatifs <br> <span class='text-success'> à votre image</span>."
+      desc: "L'organisation d'un séminaire d'entreprise ou d’une convention ne s'improvise pas. Celui-ci doit répondre à des attentes, à des objectifs et un budget précis. Cela demande beaucoup de préparation et de nombreuses taches à accomplir. L'une de ces taches, c'est la création de badges nominatifs. Chez Badge en Ligne, plus la peine de demander des devis, de faire appel à des imprimeurs ou encore à un graphiste, 2 minutes vous suffiront pour réaliser vos badges grâce à notre éditeur en ligne."
+      feature_1: "Personnalisable"
+      feature_2: "Livraison gratuite"
+      feature_3: "Qualité"
+      feature_4: "Support 7/7"
+    section-3:
+      label: "Relation Client"
+      title: "Votre satisfaction est notre <span class='text-info'>priorité</span> !"
+      badges: "Badges créés"
+      clients: "Clients satisfaits"
+      events: "Évènements"
+
+    cta:
+      title: "Créez vos badges pour vos séminaires en 2 minutes !"
+      desc: "Ne gaspillez plus votre temps sur des taches fastidieuse et rébarbative."
+
+

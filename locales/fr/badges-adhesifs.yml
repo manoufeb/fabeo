@@ -1,0 +1,24 @@
+fr:
+  badges-adhesifs:
+    meta:
+      title: "Badges adhésifs - Autocollants | Badge en ligne"
+      desc: "Créez et commandez vos badges adhésifs autocollants pour vos évènements, séminaires ou salons. Notre solution s'adapte à tous vos besoins."
+    banner:
+      h1_html: "Badges <span class='text-primary'>Adhésifs</span> pour vos évènements."
+      desc: "Une façon économique et écologique de créer vos badges. Plus besoin de porte-badges, épingles ou autres attaches. Nos badges adhésifs se collent directement sur les vêtements !"
+      cta: "Créez vos badges"
+    pricing:
+      title: "Tarif"
+      desc: "Nous imprimons et expédions"
+      price: "0.99"
+      ship: "Livraison gratuite en 3 jours ouvrables !"
+    details:
+      title: "Détails"
+      features:
+        - "Format: 105mm x 70mm"
+        - "Design personnalisé"
+        - "Impression en couleur"
+        - "Facile à détacher et coller"
+        - "Bords arrondis"
+        - "Haute qualité d'impression"
+        - "Livraison gratuite en 3 jours ouvrables"

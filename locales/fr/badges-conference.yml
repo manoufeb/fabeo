@@ -1,0 +1,41 @@
+fr:
+  badges-conference:
+    meta:
+      title: "Badges Conference | Badge en Ligne"
+      desc: "Badges conférence nominatifs. Personnalisable en ligne en moins de 2 minutes, distribuez à vos participants des badges professionnels !"
+    banner:
+      h1: "Badges de conférence"
+      desc: "Pour vos conférences ou autres évènements professionnels, faites des badges nominatifs personnalisé en 2 minutes !"
+    section-1:
+      label: "Bagdes nominatifs"
+      title: "Des badges professionnels <br> <span class='text-success'>accessibles à tous</span>."
+      desc: "Badge en Ligne vous permet de créer vous-même des badges nominatifs pour vos conférences, séminaires, évènements, salons... Avec des formats adaptés à tous vos évènements, nous avons la volonté de proposer un service simple et intuitif qui vous permettra de gagner un temps précieux sur l'organisation de vos conférences et autres évènements."
+      feature_1: "Personnalisable"
+      feature_2: "Livraison gratuite"
+      feature_3: "Qualité"
+      feature_4: "Support 7/7"
+    section-2:
+      label: "Quelques chiffres"
+      title: "Un service client toujours à votre écoute et des délais <span class='text-info'>utlra rapides</span> !"
+      badges: "Badges créés"
+      clients: "Clients satisfaits"
+      events: "Évènements"
+    section-3:
+      label: "Application"
+      title: "Une application <span class='text-primary'>simple & intuitive</span> !"
+      desc: "Grâce à notre application facile et rapide à prendre en main, 2 minutes vous suffiront à faire vos badges !"
+      features:
+      - title: "Importez"
+        desc: "Importez votre liste de participants depuis un fichier Excel, CSV ou Google sheets"
+        icon: "Files/Cloud-upload"
+      - title: "Editez"
+        desc: "Utilisez notre éditeur en ligne pour designer un badge à l’image de votre événement."
+        icon: "Text/Edit-text"
+      - title: "Imprimez ou faites-vous livrez"
+        desc: "Imprimez directement vos badges. Vous avez simplement besoin d'une imprimante standard. Nous pouvons aussi imprimer pour vous et vous livrer en 3 jours ouvrables !"
+        icon: "Devices/Printer"
+    cta:
+      title: "Créez vos badges de conférence en 2 minutes !"
+      desc: "Ne gaspillez plus votre temps sur des taches fastidieuse et rébarbative."
+
+

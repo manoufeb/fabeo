@@ -1,0 +1,24 @@
+# Comment imprimer mes badges
+fr:
+  faq:
+    comment-imprimer-les-badges-sur-son-imprimante:
+      meta:
+        title: "Comment imprimer mes badges sur mon imprimante ? | Badge en Ligne"
+        desc: "Voilà la démarche à suivre pour imprimer vos badges sur votre imprimante à la maison ou au travail."
+      h1: "Comment imprimer mes badges sur mon imprimante ?"
+      short_desc: "Afin d'imprimer correctement vos badges sur votre imprimante vous devez suivres ces quelques étapes."
+      heading_1: "Format du papier : A4 et Echelle : 100%"
+      paragraph_1: "Vous devez vous assurer que vos paramètres d'impression sont définis pour un format de papier A4 et une mise à l'échelle de 100%, afin que la conception ne soit pas réduite par l'imprimante."
+      sub_heading_1: "Mac - Aperçu "
+      paragraph_2: "Fichier > imprimer <br> Cliquez sur 'Plus de paramètres' <br> “Taille du papier” choisissez A4 <br> “Mise à l'echelle” choisissez “Personalisé” et inscrivez “100” cliquez ensuite sur “Imprimer”."
+      caption_1: "Sur votre mac avec Aperçu"
+      sub_heading_2: "Google Chrome "
+      paragraph_2: "Fichier > imprimer <br> Dans les paramètre d'impression : “Taille du papier” choisissez A4 <br> puis choisissez “Echelle” et inscrivez “100%” cliquez ensuite sur “Imprimer”."
+      caption_2: "Avec Google Chrome"
+      sub_heading_3: "Mac - Safari "
+      paragraph_3: "Fichier > imprimer <br> Dans les paramètre d'impression : “Taille du papier” choisissez A4 <br> puis choisissez “Echelle” et inscrivez “100%” cliquez ensuite sur “Imprimer”."
+      caption_3: "Sur votre mac avec Safari"
+      heading_2: "Avoir une imprimante propre"
+      paragraph_2: "Afin d'obtenir une bonne qualitée d'impression, vous devez avoir une imprimante propre, des buses non-obstruées et des têtes d'impresssions entretenues."
+      heading_3: "La position du  papier "
+      paragraph_3: "Installer correctement votre papier dans le bac prévu à cette effet. Veillez à bien placer le guide de largeur de papier afin que le papier ne bouge pas lors de l'impression."

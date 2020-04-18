@@ -1,0 +1,346 @@
+<% content_for(:title, t('badges-seminaire-entreprise.meta.title')) %>
+<% content_for(:desc, t('badges-seminaire-entreprise.meta.desc')) %>
+<% content_for(:footer_color, 'bg-gray-200') %>
+
+<!-- WELCOME
+================================================== -->
+<section class="py-10 py-md-14 overlay overlay-black overlay-60 bg-cover" style="background-image: url(../images/covers/cover-20.jpg);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center">
+
+        <!-- Heading -->
+        <h1 class="display-2 font-weight-bold text-white">
+          <%= t('badges-seminaire-entreprise.banner.h1') %>
+        </h1>
+
+        <!-- Text -->
+        <p class="lead text-white-75 mb-0">
+          <%= t('badges-seminaire-entreprise.banner.desc') %>
+        </p>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+<!-- SHAPE
+================================================== -->
+<div class="position-relative">
+  <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+    <%= include_svg 'shapes/curves/curve-1.svg' %>
+  </div>
+</div>
+
+<!-- SECTION 1
+================================================== -->
+<section class="mt-4 py-8 py-md-11">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+        <!-- iPhone + Macbook -->
+        <div class="w-md-150 w-lg-130 mb-6 mb-md-0">
+          <div class="device-combo device-combo-iphonex-macbook">
+
+            <!-- Macbook -->
+            <div class="device device-macbook">
+              <%= image_tag 'screenshots/desktop/application-1.png', class: 'device-screen', alt: 'application badge en ligne'%>
+              <%= image_tag 'devices/macbook.svg', class: 'img-fluid', alt: 'illustration de macbook' %>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-7 col-lg-6 order-md-1">
+
+        <!-- Badge -->
+        <span class="badge badge-pill badge-primary-soft mb-3">
+          <span class="h6 text-uppercase"><%= t('badges-seminaire-entreprise.section-1.label') %></span>
+        </span>
+
+        <!-- Heading -->
+        <h2>
+          <%= t('badges-seminaire-entreprise.section-1.title').html_safe %>
+        </h2>
+
+        <!-- Text -->
+        <p class="font-size-lg text-muted mb-6">
+          <%= t('badges-seminaire-entreprise.section-1.desc')%>
+        </p>
+
+        <% t('badges-seminaire-entreprise.section-1.features').each do |feature| %>
+
+          <!-- List -->
+          <div class="d-flex">
+
+            <!-- Icon -->
+            <div class="icon text-primary">
+              <%= include_svg("icons/duotone-icons/#{feature[:icon]}.svg") %>
+            </div>
+
+            <div class="ml-5">
+
+              <!-- Heading -->
+              <h4 class="mb-1">
+                <%= feature[:title] %>
+              </h4>
+
+              <!-- Text -->
+              <p class="text-muted mb-5">
+                <%= feature[:desc] %>
+              </p>
+
+            </div>
+
+          </div>
+
+        <% end %>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+
+<!-- SECTION 2
+================================================== -->
+<section class="pt-10 pt-lg-9 pb-md-4 pb-lg-8 bg-light">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-12 col-md-6 col-lg-5">
+
+        <!-- Badge -->
+        <span class="badge badge-pill badge-success-soft mb-3">
+          <span class="h6 text-uppercase"><%= t('badges-seminaire-entreprise.section-2.label')%></span>
+        </span>
+
+        <!-- Heading -->
+        <h2>
+          <%= t('badges-seminaire-entreprise.section-2.title').html_safe %>
+        </h2>
+
+        <!-- Text -->
+        <p class="font-size-lg text-gray-700 mb-6">
+          <%= t('badges-seminaire-entreprise.section-2.desc') %>
+        </p>
+
+        <!-- List -->
+        <div class="row">
+          <div class="col-12 col-lg-6">
+
+            <!-- Item -->
+            <div class="d-flex">
+
+              <!-- Check -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-success">
+                <%= t('badges-seminaire-entreprise.section-2.feature_1') %>
+              </p>
+
+            </div>
+
+            <!-- Item -->
+            <div class="d-flex">
+
+              <!-- Check -->
+              <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <p class="text-success mb-lg-0">
+                <%= t('badges-seminaire-entreprise.section-2.feature_2') %>
+              </p>
+
+            </div>
+
+          </div>
+          <div class="col-12 col-lg-6">
+
+            <!-- Item -->
+            <div class="d-flex">
+
+              <!-- Check -->
+              <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </span>
+
+              <!-- Text -->
+              <p class="text-success">
+                <%= t('badges-seminaire-entreprise.section-2.feature_3') %>
+              </p>
+
+            </div>
+
+            <!-- Item -->
+            <div class="d-flex">
+
+              <!-- Check -->
+              <div class="badge badge-rounded-circle badge-success-soft mr-1 mr-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-success mb-0">
+                <%= t('badges-seminaire-entreprise.section-2.feature_4') %>
+              </p>
+
+            </div>
+          </div>
+        </div> <!-- / .row -->
+
+      </div>
+      <div class="col-12 col-md-6">
+
+        <!-- Images -->
+        <div class="row">
+          <div class="col-6 mt-8 mr-n5" data-aos="fade-up">
+            <%= image_tag 'photos/photo-32.jpg', class: 'img-fluid mb-4 rounded', alt: 'photo de conference avec badges nominatifs'%>
+
+            <%= image_tag 'photos/photo-4.jpg', class: 'img-fluid rounded', alt: 'photo seminaire avec badge'%>
+
+
+          </div>
+          <div class="col-6" data-aos="fade-up" data-aos-delay="100">
+
+
+            <%= image_tag 'photos/photo-31.jpg', class: 'img-fluid mb-4 rounded', alt: 'photo evenements etiquette badge' %>
+
+            <%= image_tag 'photos/photo-11.jpg', class: 'img-fluid rounded', alt: 'conference badge demo'%>
+
+          </div>
+        </div> <!-- / .row -->
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+<!-- SECTION 3
+================================================== -->
+<section>
+  <div class="container py-8 pt-md-11 pb-md-9">
+    <div class="row">
+      <div class="col-12 col-md-10 col-lg-8">
+
+        <!-- Badge -->
+        <span class="badge badge-pill badge-info-soft mb-3">
+          <span class="h6 text-uppercase"><%= t('badges-seminaire-entreprise.section-3.label') %></span>
+        </span>
+
+
+        <!-- Heading -->
+        <h2 class="mb-6 mb-md-8">
+          <%= t('badges-seminaire-entreprise.section-3.title').html_safe %>
+        </h2>
+
+        <!-- Stats -->
+        <div class="d-flex">
+          <div class="pr-5">
+            <h3 class="mb-0">
+              <span data-toggle="countup" data-from="0" data-to="74" data-aos data-aos-id="countup:in">4000</span>+
+            </h3>
+            <p class="text-gray-700 mb-0">
+              <%= t('badges-seminaire-entreprise.section-3.badges') %>
+            </p>
+          </div>
+          <div class="px-5">
+            <h3 class="mb-0">
+              <span data-toggle="countup" data-from="0" data-to="124" data-aos data-aos-id="countup:in">50</span>+
+            </h3>
+            <p class="text-gray-700 mb-0">
+              <%= t('badges-seminaire-entreprise.section-3.clients') %>
+            </p>
+          </div>
+          <div class="pl-5">
+            <h3 class="mb-0">
+              <span data-toggle="countup" data-from="0.0" data-to="1.9" data-decimals="1" data-aos data-aos-id="countup:in">100</span>+
+            </h3>
+            <p class="text-gray-700 mb-0">
+              <%= t('badges-seminaire-entreprise.section-3.events') %>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+<!-- IMAGE
+================================================== -->
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+
+      <!-- Image -->
+      <div class="form-row">
+        <div class="col-4">
+
+          <%= image_tag 'photos/photo-16.jpg', class: 'img-fluid rounded shadow-lg', alt: 'conférence professionnel'%>
+
+
+        </div>
+        <div class="col-3">
+
+          <%= image_tag 'photos/photo-17.jpg', class: 'img-fluid rounded shadow-lg mb-4', alt: 'séminaire professionnel'%>
+
+          <%= image_tag 'photos/photo-18.jpg', class: 'img-fluid rounded shadow-lg mt-1', alt: 'évènement professionnel'%>
+
+        </div>
+        <div class="col-5">
+
+          <div class="form-row mb-4">
+            <div class="col-5">
+
+              <%= image_tag 'photos/photo-19.jpg', class: 'img-fluid rounded shadow-lg', alt: 'badges nominatifs professionnel'%>
+
+            </div>
+            <div class="col-7">
+
+              <%= image_tag 'photos/photo-20.jpg', class: 'img-fluid rounded shadow-lg', alt: 'badge personnalisé'%>
+
+            </div>
+          </div> <!-- / .row -->
+
+          <%= image_tag 'photos/photo-21.jpg', class: 'img-fluid rounded shadow-lg mt-1', alt: 'badge meetup'%>
+
+        </div>
+      </div>
+
+    </div>
+  </div> <!-- / .row -->
+</div> <!-- / .container -->
+
+<!-- CTA
+================================================== -->
+<section class="pt-3 pt-md-6 bg-white">
+  <div class="container pb-6 pb-md-8 pt-6 pt-md-8 border-bottom border-top">
+    <div class="row align-items-center">
+      <div class="col-12 col-md">
+
+        <!-- Heading -->
+        <h3 class="mb-1">
+          <%= t('badges-seminaire-entreprise.cta.title') %>
+        </h3>
+
+        <!-- Text -->
+        <p class="font-size-lg text-muted mb-6 mb-md-0">
+          <%= t('badges-seminaire-entreprise.cta.desc') %>
+        </p>
+
+      </div>
+      <div class="col-12 col-md-auto">
+
+        <%= link_to t('blog.cta_btn'), config[:app_url], class: 'btn btn-primary lift' %>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+

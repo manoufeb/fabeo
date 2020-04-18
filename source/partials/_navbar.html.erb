@@ -1,0 +1,120 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container">
+
+    <!-- Brand -->
+    <% link_to '/index.html' do %>
+      <%= image_tag 'logo.svg', class: 'navbar-brand-img', alt: 'logo' %>
+    <% end %>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fe fe-x"></i>
+      </button>
+
+      <!-- Navigation -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <%= link_to t('navbar.pricing'), 'tarifs', class:'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to t('navbar.why'), 'pourquoi-nous-choisir', class: 'nav-link' %>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+            <%= t('navbar.ressources') %>
+          </a>
+          <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
+            <div class="list-group list-group-flush">
+              <% link_to 'blog', class:'list-group-item' do %>
+
+                <!-- Icon -->
+                <div class="icon icon-sm text-primary">
+                  <%= include_svg('icons/duotone-icons/Text/Article.svg') %>
+                </div>
+
+                <!-- Content -->
+                <div class="ml-4">
+
+                  <!-- Heading -->
+                  <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                    <%= t('navbar.blog') %>
+                  </h6>
+
+                  <!-- Text -->
+                  <p class="font-size-sm text-gray-700 mb-0">
+                    <%= t('navbar.blog_desc') %>
+                  </p>
+
+                </div>
+              <% end %>
+
+              <% link_to 'faq', class:'list-group-item' do %>
+
+                <!-- Icon -->
+                <div class="icon icon-sm text-primary">
+                  <%= include_svg('icons/duotone-icons/Layout/Layout-4-blocks.svg') %>
+                </div>
+
+                <!-- Content -->
+                <div class="ml-4">
+
+                  <!-- Heading -->
+                  <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                    <%= t('navbar.faq') %>
+                  </h6>
+
+                  <!-- Text -->
+                  <p class="font-size-sm text-gray-700 mb-0">
+                    <%= t('navbar.faq_desc') %>
+                  </p>
+
+                </div>
+
+              <% end %>
+
+              <% link_to '/index.html#temoignages-clients', class:'list-group-item' do %>
+
+                <!-- Icon -->
+                <div class="icon icon-sm text-primary">
+                  <%= include_svg('icons/duotone-icons/Communication/Chat#6.svg') %>
+                </div>
+
+                <!-- Content -->
+                <div class="ml-4">
+
+                  <!-- Heading -->
+                  <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                    <%= t('navbar.testimonials') %>
+                  </h6>
+
+                  <!-- Text -->
+                  <p class="font-size-sm text-gray-700 mb-0">
+                    <%= t('navbar.testimonials_desc') %>
+                  </p>
+
+                </div>
+
+              <% end %>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <%= link_to t('navbar.contact'), 'contact', class:'nav-link' %>
+        </li>
+      </ul>
+
+      <!-- Button -->
+      <%= link_to t('navbar.badge_generator'), config[:app_url], class:'navbar-btn btn btn-sm btn-primary lift ml-auto' %>
+
+    </div>
+
+  </div>
+</nav>

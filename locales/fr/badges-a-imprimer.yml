@@ -1,0 +1,21 @@
+fr:
+  badges-a-imprimer:
+    meta:
+      title: "Badges à imprimer | Badge en ligne"
+      desc: "Imprimez vos badges nominatifs directement chez vous ! Une simple imprimante suffit ! Gagnez du temps et de l'argent."
+    banner:
+      h1_html: "Badges <span class='text-success'>à imprimer</span> chez vous !"
+      desc: "Notre editeur en ligne rapide et intuitif vous permettra de créer des badges professionnels en un rien de temps. Nos badges PDF peuvent être imprimés avec n’importe quelle imprimante ou dans votre imprimerie locale (Copytop Office dépot...), aucun logiciel spécial n’est nécessaire."
+      cta: "Créez vos badges"
+    pricing:
+      title: "Tarif"
+      desc: "Vous imprimez le PDF généré"
+      price: "0.25"
+    details:
+      title: "Détails"
+      features:
+        - "4 formats : 60x90 - 70x105 - 50x80 - 148x105 (A6)"
+        - "Imprimez sur n'importe quel papier standard ou personnalisé"
+        - "Ajoutez un logo, changez les couleurs..."
+        - "Abordable, facile et rapide"
+

@@ -1,0 +1,197 @@
+<% content_for(:title, t('mentions_legales.meta.title')) %>
+<% content_for(:desc, t('mentions_legales.meta.desc')) %>
+<% content_for(:footer_color, 'bg-dark') %>
+<!-- CONTENT
+================================================== -->
+<section class="pt-8 pt-md-11 pb-8 pb-md-14">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md">
+
+        <!-- Heading -->
+        <h1 class="display-4 mb-2">
+          <%= t('mentions_legales.h1') %>
+        </h1>
+
+        <!-- Text -->
+        <p class="font-size-lg text-gray-700 mb-md-0">
+          <%= t('mentions_legales.update') %>
+        </p>
+
+      </div>
+      <div class="col-auto">
+
+        <!-- Buttons -->
+        <a href="javascript:window.print()" class="btn btn-primary-soft">
+          <%= t('mentions_legales.print') %>
+        </a>
+
+      </div>
+    </div> <!-- / .row -->
+    <div class="row">
+      <div class="col-12">
+
+        <!-- Divider -->
+        <hr class="my-6 my-md-8">
+
+      </div>
+    </div> <!-- / .row -->
+    <div class="row">
+      <div class="col-12 col-md-8">
+
+
+        <!-- Heading -->
+        <h3 class="mb-5">
+          <%= t('mentions_legales.title_1') %>
+        </h3>
+
+        <!-- Text -->
+        <p class="font-size-lg text-gray-800 mb-6 mb-md-8">
+          <%= t('mentions_legales.text_1') %>
+        </p>
+
+        <!-- List -->
+        <% t('mentions_legales.items_1').each do |item| %>
+          <div class="d-flex">
+
+            <!-- Badge -->
+            <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+              <i class="fe fe-check"></i>
+            </span>
+
+            <!-- Text -->
+            <p class="text-gray-800">
+              <%= item %>
+            </p>
+
+          </div>
+        <% end %>
+
+        <!-- Heading -->
+        <h3 class="mt-8 mb-5">
+          <%= t('mentions_legales.title_2') %>
+        </h3>
+
+        <!-- Text -->
+        <p class="text-gray-800">
+          <%= t('mentions_legales.text_2').html_safe %>
+        </p>
+
+
+        <!-- Heading -->
+        <h3 class="mt-8 mb-5">
+          <%= t('mentions_legales.title_3') %>
+        </h3>
+
+        <!-- Text -->
+        <p class="text-gray-800">
+          <%= t('mentions_legales.text_3').html_safe %>
+        </p>
+
+        <!-- Heading -->
+        <h3 class="mt-8 mb-5">
+          <%= t('mentions_legales.title_4') %>
+        </h3>
+
+        <!-- Text -->
+        <p class="text-gray-800">
+          <%= t('mentions_legales.text_4').html_safe %>
+        </p>
+
+        <!-- Heading -->
+        <h3 class="mt-8 mb-5">
+          <%= t('mentions_legales.title_5') %>
+        </h3>
+
+        <!-- Text -->
+        <p class="text-gray-800">
+          <%= t('mentions_legales.text_5').html_safe %>
+        </p>
+
+        <!-- Heading -->
+        <h3 class="mt-8 mb-5">
+          <%= t('mentions_legales.title_6') %>
+        </h3>
+
+        <!-- Text -->
+        <p class="text-gray-800">
+          <%= t('mentions_legales.text_6').html_safe %>
+        </p>
+
+        <!-- Heading -->
+        <h3 class="mt-8 mb-5">
+          <%= t('mentions_legales.title_7') %>
+        </h3>
+
+        <!-- Text -->
+        <p class="text-gray-800">
+          <%= t('mentions_legales.text_7').html_safe %>
+        </p>
+
+      </div>
+      <div class="col-12 col-md-4">
+
+        <!-- Card -->
+        <div class="card shadow-light-lg">
+          <div class="card-body">
+
+            <!-- Heading -->
+            <h4>
+              <%= t('mentions_legales.company_info.title') %>
+            </h4>
+
+            <% t('mentions_legales.company_info.items').each do |item| %>
+              <!-- Heading -->
+              <h6 class="font-weight-bold text-uppercase text-gray-700 mb-2">
+                <%= item[:heading] %>
+              </h6>
+
+              <!-- Text -->
+              <p class="font-size-sm text-gray-800 mb-5">
+                <%= item[:desc] %>
+              </p>
+            <% end %>
+
+
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="card shadow-light-lg mt-6">
+          <div class="card-body">
+
+            <!-- Heading -->
+            <h4>
+              <%= t('mentions_legales.have_a_question') %>
+            </h4>
+
+            <!-- Text -->
+            <p class="font-size-sm text-gray-800 mb-5">
+              <%= t('mentions_legales.question_desc') %>
+            </p>
+
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700 mb-2">
+              <%= t('mentions_legales.email_us') %>
+            </h6>
+
+            <!-- Text -->
+            <p class="font-size-sm mb-0">
+              <a href="mailto:contact@badgeenligne.fr" class="text-reset"><%= t('mentions_legales.email_adress') %></a>
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+<!-- SHAPE
+================================================== -->
+<div class="position-relative">
+  <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+    <%= include_svg('shapes/curves/curve-1.svg') %>
+  </div>
+</div>

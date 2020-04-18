@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= content_for?(:title) ? yield_content(:title) : t('index.meta.desc') %></title>
+    <meta name="description" content="<%= content_for?(:desc) ? yield_content(:desc) : t('index.meta.desc') %>" >
+    <link rel="canonical" href="<%= full_url %>">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#335eea">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Social media card -->
+    <%= partial "partials/social_media" %>
+    <%= partial "partials/google_analytics" %>
+
+    <!-- Theme CSS -->
+    <%= stylesheet_link_tag :site %>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+    <!-- Use the title and desc from a page's content_for if it has one -->
+    <meta name="description" content="<%= content_for?(:desc) ? yield_content(:desc) : "Badges pour vos évènements, conférences et séminaires" %>" >
+    <title><%= content_for?(:title) ? yield_content(:title) : "Badge en ligne" %></title>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="48c29da0-2dc2-4b00-a481-192611af50a6";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <%= partial "partials/navbar" %>
+
+    <%= yield %>
+
+    <!-- Footer -->
+    <%= partial "partials/footer" %>
+
+    <!-- JS -->
+    <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" %>
+    <%= javascript_include_tag "javascripts/libs/bootstrap/dist/js/bootstrap.bundle.min.js" %>
+    <%= javascript_include_tag "javascripts/libs/flickity/dist/flickity.pkgd.min.js" %>
+    <%= javascript_include_tag "javascripts/libs/flickity-fade/flickity-fade.js" %>
+    <%= javascript_include_tag "javascripts/libs/aos/dist/aos.js" %>
+    <%= javascript_include_tag "javascripts/libs/smooth-scroll/dist/smooth-scroll.min.js" %>
+    <%= javascript_include_tag "javascripts/libs/typed.js/lib/typed.min.js" %>
+    <%= javascript_include_tag "javascripts/libs/highlightjs/highlight.pack.min.js" %>
+
+    <%= javascript_include_tag :aos %>
+    <%= javascript_include_tag :highlight %>
+    <%= javascript_include_tag :navbar %>
+    <%= javascript_include_tag :polyfills %>
+    <%= javascript_include_tag :popovers %>
+    <%= javascript_include_tag :pricing %>
+    <%= javascript_include_tag 'smooth-scroll' %>
+    <%= javascript_include_tag :tooltips %>
+    <%= javascript_include_tag :typed %>
+    <%= javascript_include_tag :theme %>
+
+    <%= partial "partials/third-parties-scripts" %>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+fr:
+  lancement-blog-badge-en-ligne:
+    title: "Lancement du Blog"
+    author: "Manou Febvret"
+    avatar: "avatar-manou.jpg"
+    short_desc: "Parce que tout aventure est bonne à être partagée, nous souhaitons écrire dans ce blog pour échanger avec vous sur notre entreprise, mais aussi sur la gestion d’évènements et l’entreprenariat."
+    share: "Partager"
+    cover_img: "cover-1.png"
+    image_1: "le-grand-saut.jpg"
+    caption_1: "Photo par Alex Radelich"
+    heading_1: "Introduction - Le grand saut"
+    paragraph_1: "Avec un titre bien cliché, je commence bien mon premier article tiens... Et en même temps cela représente très bien l’état d’esprit du moment. L’écriture est pour moi un exercice très compliqué, les idées se mélangent, les fautes d’orthographes sont omniprésentes et les phrases bien trop longues ; vous avez vu la taille de celle-ci ? :sweat_smile: Mais s’il y a bien une chose que j’ai appris ces dernières années c’est que mettre les mains dans le cambouis est la meilleure chose à faire pour vaincre ses peurs et apprendre toujours plus ! Soyez indulgents et repassez souvent, vous y verrez sûrement des améliorations article après article !"
+    quote:  "“Ce que nous devons apprendre à faire, nous l’apprenons en le faisant.”<br>Aristote 👨‍🏫"
+    paragraph_1_1: "La citation qui va bien afin de ne surtout pas quitter le monde des clichés dans lequel je suis rentré depuis le début de cet article..."
+    heading_2: "Les startups sont à la mode"
+    paragraph_2: "On entend et on voit ce mot partout. Même si je baigne quotidiennement dans cet écosystème, force est de constater que le terme s’est démocratisé. On va donc essayer d’éclaircir notre projet pour pas être catalogué dans la Nième startup disruptive, fintech, scale-up à fort potentiel (coucou les recruteurs 👋)..."
+    sub_heading_2: "Badge en ligne c'est quoi ?"
+    paragraph_2_2: "Badge en ligne c’est la volonté de proposer un service simple et rapide de création de badges nominatifs pour vos évènements, séminaires, conférences etc. Notre constat était simple : si vous voulez faire des badges, c’est compliqué, long, rébarbatif et vos interlocuteurs (les imprimeurs) vous parlent de marge de fond perdus et autres termes incompréhensibles pour les non-initiés. Nous avons commençé à créer un outil vous permettant d’accomplir cette tâche en 2 minutes seulement. Plusieurs mois de travail plus tard, nous sommes prêt à sortir de Béta et ouvrir notre logiciel à tous. Nous avons la chance d'être déjà soutenus par de très beau clients ! Notre leitmotiv c’est de vous proposer une application toujours plus simple, toujours plus efficace tout en répondant à vos besoins."
+    sub_heading_3: "Nos 4 piliers"
+    pillars:
+      - "Le client au centre de l’expérience"
+      - "Un produit toujours simple"
+      - "Une attention particulière portée aux détails et au design"
+      - "Être toujours fiers de notre travail"
+    paragraph_2_3: "Ces piliers nous aident à avancer toujours vers une meilleure expérience client mais aussi une satisfaction personnelle et donner un sens au travail que nous faisons chaque jour."
+    sub_heading_4: "En pratique, ça donne quoi ?"
+    paragraph_2_4: "On passe à l’action avec une démo de la création de badges en quelques clics :"
+    caption_2: "Création de badges en moins de 30 secondes."
+    paragraph_2_5: "Ça vous intérèsse ? Nous vous préparons très vite d'autres articles détaillés sur notre solution !"
+    heading_3: "Conclusion"
+    paragraph_3: "Je finirai en disant que cette année 2020 est tournée vers le challenge ! Lancement de Badge en Ligne, la volonté d’écrire des articles et l’ambition toujours plus forte d’être passionné chaque jour et d’être fier du travail accomplis ! Sur ces belles paroles qui sonnent un peu mielleuses 🍯 je vous laisse là. N’oubliez pas de nous donner vos feedbacks et si vous avez besoin de badges alors suivez les boutons bleus ! 💙"
+    # slideshow:
+    #   - name: 'photo-28.jpg'
+    #     alt: 'description'
+    #   - name: 'photo-27.jpg'
+    #     alt: 'description'
+    #   - name: 'photo-29.jpg'
+    #     alt: 'description'

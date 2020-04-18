@@ -1,0 +1,139 @@
+<% content_for(:title, current_article.title) %>
+<% content_for(:desc, t("#{current_article.title}.short_desc")) %>
+<% content_for(:footer_color, 'bg-light') %>
+<% wrap_layout :layout do %>
+  <article>
+    <%= yield %>
+  </article>
+  <!-- SHAPE
+  ================================================== -->
+  <div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+      <%= include_svg 'shapes/curves/curve-1.svg' %>
+    </div>
+  </div>
+
+
+  <% if blog.articles.count > 2 %>
+    <!-- ARTICLES
+    ================================================== -->
+    <section class="pt-7 pt-md-10 bg-light pb-8">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-md">
+
+            <!-- Heading -->
+            <h3 class="mb-0">
+              <%= t('blog.last_post') %>
+            </h3>
+
+            <!-- Text -->
+            <p class="mb-0 text-muted">
+              <%= t('blog.last_post_desc') %>
+            </p>
+
+          </div>
+          <div class="col-12 col-md-auto">
+
+            <!-- Button -->
+            <%= link_to t('blog.see_all'), '/blog', class: "btn btn-sm btn-outline-gray-300 d-none d-md-inline" %>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <% suggested = blog.articles %>
+          <% suggested.delete_if{|item| item == current_article}.sample(3).each do |article| %>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+
+                <!-- Image -->
+                <a class="card-img-top" href="<%= article.url %>">
+
+                  <!-- Image -->
+                    <%= image_tag "../images/blog/" + t("#{article.title}.cover_img"), class: "card-img-top", alt: article.title %>
+
+                  <!-- Shape -->
+                  <div class="position-relative">
+                    <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                      <%= include_svg 'shapes/curves/curve-3.svg' %>
+                    </div>
+                  </div>
+
+                </a>
+
+                <!-- Body -->
+                <a class="card-body" href="<%= article.url %>">
+
+                  <!-- Heading -->
+                  <h3>
+                    <%= t("#{article.title}.title") %>
+                  </h3>
+
+                  <!-- Text -->
+                  <p class="mb-0 text-muted">
+                    <%= t("#{article.title}.short_desc") %>
+                  </p>
+
+                </a>
+
+                <!-- Meta -->
+                <a class="card-meta mt-auto" href="<%= article.url %>">
+
+                  <!-- Divider -->
+                  <hr class="card-meta-divider">
+
+                  <!-- Avatar -->
+                  <div class="avatar avatar-sm mr-2">
+                    <img src="../../images/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                  </div>
+
+                  <!-- Author -->
+                  <h6 class="text-uppercase text-muted mr-2 mb-0">
+                    <%= t("#{article.title}.author") %>
+                  </h6>
+
+                  <!-- Date -->
+                  <p class="h6 text-uppercase text-muted mb-0 ml-auto">
+                    <time><%= I18n.l(article.date, format: "%d %B") %></time>
+                  </p>
+
+                </a>
+
+              </div>
+            </div>
+          <% end %>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+  <% end %>
+
+  <!-- CTA
+  ================================================== -->
+  <section class="pt-7 pt-md-10 bg-light">
+    <div class="container pb-6 pb-md-8 border-bottom">
+      <div class="row align-items-center">
+        <div class="col-12 col-md">
+
+          <!-- Heading -->
+          <h3 class="mb-1">
+            <%= t('blog.cta_title') %>
+          </h3>
+
+          <!-- Text -->
+          <p class="font-size-lg text-muted mb-6 mb-md-0">
+            <%= t('blog.cta_desc') %>
+          </p>
+
+        </div>
+        <div class="col-12 col-md-auto">
+
+          <%= link_to t('blog.cta_btn'), config[:app_url], class: 'btn btn-primary lift' %>
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+
+<% end %>

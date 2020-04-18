@@ -1,0 +1,42 @@
+fr:
+  badges-evenement:
+    meta:
+      title: "Badges Évènement | Badge en Ligne"
+      desc: "Badges évènement nominatifs. Personnalisable en ligne en moins de 2 minutes, distribuez à vos participants des badges professionnels !"
+    banner:
+      h1: "Badges pour vos évènements"
+      desc: "Pour vos évènements professionnels ou associatifs, proposez des badges nominatifs personnalisés à vos participants."
+    section-1:
+      label: "Solution pour bagdes nominatifs"
+      title: "Une solution en ligne <span class='text-primary'>adaptée à vos besoins</span> !"
+      desc: "Grâce à notre solution en ligne facile et rapide à prendre en main, 2 minutes vous suffiront à faire vos badges nominatifs !"
+      features:
+      - title: "Importez"
+        desc: "Importez votre liste de participants depuis un fichier Excel, CSV ou Google sheets"
+        icon: "Files/Cloud-upload"
+      - title: "Editez"
+        desc: "Utilisez notre éditeur en ligne pour designer un badge à l’image de votre événement."
+        icon: "Text/Edit-text"
+      - title: "Imprimez ou faites-vous livrez"
+        desc: "Imprimez directement vos badges. Vous avez simplement besoin d'une imprimante standard. Nous pouvons aussi imprimer pour vous et vous livrer en 3 jours ouvrables !"
+        icon: "Devices/Printer"
+    section-2:
+      label: "Bagdes pour évènements"
+      title: "Des badges professionnels <br> <span class='text-success'> en 2 minutes</span>."
+      desc: "Badge en Ligne vous permet de créer vous même des badges nominatifs pour vos évènements, séminaires, conférences, salons, conventions... Nos différents choix de formats s'adapteront parfaitement à tous vos types d'évènements. Les badges nominatifs permettent de dynamiser les interactions entre les pariticpants et de renforcer votre image de marque. Grâce à notre solution en ligne vous pourrez facilement personnaliser vos badges pour qu'ils soient à l'image de votre évènement."
+      feature_1: "Personnalisable"
+      feature_2: "Livraison gratuite"
+      feature_3: "Qualité"
+      feature_4: "Support 7/7"
+    section-3:
+      label: "Quelques chiffres"
+      title: "Votre satisfaction est notre <span class='text-info'>priorité</span> !"
+      badges: "Badges créés"
+      clients: "Clients satisfaits"
+      events: "Évènements"
+
+    cta:
+      title: "Créez vos badges pour évènement en 2 minutes !"
+      desc: "Ne gaspillez plus votre temps sur des taches fastidieuse et rébarbative."
+
+

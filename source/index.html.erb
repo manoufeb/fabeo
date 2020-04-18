@@ -1,0 +1,630 @@
+---
+priority: 1
+---
+<% content_for(:title, t('index.meta.title')) %>
+<% content_for(:desc, t('index.meta.desc')) %>
+<% content_for(:footer_color, 'bg-gray-200') %>
+
+<section class="pt-4 pt-md-11">
+
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+        <!-- Image -->
+        <div class="img-skewed img-skewed-left mb-8 mb-md-0">
+           <%= image_tag 'illustrations/illustration-badge.png', class: 'screenshot img-fluid mw-md-130', alt: 'illustration de badge', data: { aos: 'img-skewed-item-left', aos_delay: '100' } %>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-7 col-lg-6 order-md-1">
+
+        <!-- Heading -->
+        <h1 class="display-3 text-center text-md-left">
+          <%= t('index.banner.h1').html_safe %>
+        </h1>
+
+        <!-- Text -->
+        <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
+          <%= t('index.banner.desc') %>
+        </p>
+
+        <!-- Buttons -->
+        <div class="text-center text-md-left">
+          <% link_to config[:app_url], class:'btn btn-primary shadow lift mr-1' do %>
+            <%= t('index.banner.main_cta') %>
+            <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+          <% end %>
+
+          <%= link_to t('index.banner.secondary_cta'), '/index.html#temoignages-clients', class:'btn btn-primary-soft lift' %>
+        </div>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+<!-- FEATURES
+================================================== -->
+<section class="py-8 py-md-11 border-bottom">
+  <div class="container">
+    <div class="row">
+      <% t('index.features').each do |feature| %>
+        <div class="col-12 col-md-4">
+
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <%= include_svg("icons/duotone-icons/#{feature[:icon]}.svg") %>
+          </div>
+
+          <!-- Heading -->
+          <h3>
+            <%= feature[:title] %>
+          </h3>
+
+          <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            <%= feature[:desc] %>
+          </p>
+
+        </div>
+      <% end %>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+<!-- CUSTOMERS
+================================================== -->
+<section class="py-6 py-md-8 border-bottom">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+        <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+        <!-- Brand -->
+        <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+          <%= include_svg('brands/logotype/sprinklr.svg') %>
+        </div>
+
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+        <!-- Brand -->
+        <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+          <%= include_svg('brands/logotype/lewagon.svg') %>
+        </div>
+
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+        <!-- Brand -->
+        <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+          <%= include_svg('brands/logotype/uppler.svg') %>
+        </div>
+
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+        <!-- Brand -->
+        <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+          <%= include_svg('brands/logotype/spendesk.svg') %>
+        </div>
+
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+        <!-- Brand -->
+        <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
+          <%= include_svg('brands/logotype/aircall.svg') %>
+        </div>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+<!-- PRICING
+================================================== -->
+<section class="pt-10 pt-md-12 bg-gradient-light" id="tarifs">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center">
+
+        <!-- Badge -->
+        <span class="badge badge-pill badge-success-soft mb-3">
+          <span class="h6 text-uppercase">
+            <%= t('index.pricing.tag') %>
+          </span>
+        </span>
+
+        <!-- Heading -->
+        <h2>
+          <%= t('index.pricing.title') %>
+        </h2>
+
+        <!-- Text -->
+        <p class="lead text-gray-700">
+          <%= t('index.pricing.desc') %>
+        </p>
+
+        <!-- Form -->
+        <form class="d-flex align-items-center justify-content-center mb-7 mb-md-9">
+        </form>
+
+      </div>
+    </div> <!-- / .row -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4">
+
+        <!-- Card -->
+        <div class="card card-border card-border-xl border-success shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+          <div class="card-body">
+
+            <!-- Badge -->
+            <h6 class="font-weight-bold text-uppercase text-center text-success mb-5"><%= t('index.pricing.plans.plan_1.title') %></h6>
+
+            <!-- Icon -->
+            <div class="icon text-primary mb-3 text-center">
+              <%= include_svg("icons/duotone-icons/Files/File-pdf.svg") %>
+            </div>
+
+            <!-- Price -->
+            <div class="d-flex justify-content-center">
+              <span class="price display-2 mb-0"><%= t('index.pricing.plans.plan_1.price') %></span>
+              <span class="h2 mb-0 mt-2">€</span>
+            </div>
+
+            <!-- Text -->
+            <p class="text-center text-muted">
+              <%= t('index.pricing.per_badge') %>
+            </p>
+
+            <!-- List -->
+            <% t('index.pricing.plans.plan_1.desc').each do |feature| %>
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                <i class="fe fe-check"></i>
+              </span>
+
+              <!-- Text -->
+              <p>
+                <%= feature %>
+              </p>
+            </div>
+            <% end %>
+            <!-- Link -->
+            <div class="text-center mt-2">
+              <%= link_to t('index.pricing.learn_more'), 'badges-a-imprimer', class:'font-size-sm font-weight-bold text-decoration-none' %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+
+        <!-- Card -->
+        <div class="card card-border card-border-xl border-info shadow-light-lg lift lift-lg">
+          <div class="card-body">
+
+            <!-- Badge -->
+            <h6 class="font-weight-bold text-uppercase text-info text-center mb-5"><%= t('index.pricing.plans.plan_2.title') %></h6>
+
+            <!-- Icon -->
+            <div class="icon text-primary mb-3 text-center">
+              <%= include_svg("icons/duotone-icons/Files/Adhesive-badge.svg") %>
+            </div>
+
+            <!-- Price -->
+            <div class="d-flex justify-content-center">
+              <span class="price display-2 mb-0"><%= t('index.pricing.plans.plan_2.price') %></span>
+              <span class="h2 mb-0 mt-2">€</span>
+            </div>
+
+            <!-- Text -->
+            <p class="text-center text-muted">
+              <%= t('index.pricing.per_badge') %>
+            </p>
+
+            <!-- List -->
+            <% t('index.pricing.plans.plan_2.desc').each do |feature| %>
+              <div class="d-flex">
+
+                <!-- Badge -->
+                <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </span>
+
+                <!-- Text -->
+                <p>
+                  <%= feature %>
+                </p>
+              </div>
+            <% end %>
+            <!-- Link -->
+            <div class="text-center mt-2">
+              <%= link_to t('index.pricing.learn_more'), 'badges-adhesifs', class:'font-size-sm font-weight-bold text-decoration-none' %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+
+        <!-- Card -->
+        <div class="card card-border card-border-xl border-danger shadow-light-lg">
+          <div class="card-body">
+
+            <!-- Badge -->
+            <h6 class="font-weight-bold text-uppercase text-center mb-5 text-danger"><%= t('index.pricing.plans.plan_3.title') %></h6>
+
+            <!-- Icon -->
+            <div class="icon text-primary mb-3 text-center">
+              <%= include_svg("icons/duotone-icons/Files/Printed-badge.svg") %>
+            </div>
+
+            <!-- Price -->
+            <div class="d-flex justify-content-center">
+              <span class="price display-2 mb-0"><%= t('index.pricing.plans.plan_3.price') %></span>
+              <span class="h2 mb-0 mt-2">€</span>
+            </div>
+
+            <!-- Text -->
+            <p class="text-center text-muted">
+              <%= t('index.pricing.per_badge') %>
+            </p>
+
+            <!-- List -->
+            <% t('index.pricing.plans.plan_3.desc').each do |feature| %>
+              <div class="d-flex">
+
+                <!-- Badge -->
+                <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                  <i class="fe fe-check"></i>
+                </span>
+
+                <!-- Text -->
+                <p>
+                  <%= feature %>
+                </p>
+              </div>
+            <% end %>
+
+            <div class="text-center">
+              <!-- Badge -->
+              <span class="badge badge-pill badge-danger-soft ml-auto">
+                <%= t('index.pricing.plans.plan_3.soon') %>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-12 pt-8 text-center">
+        <!-- Button -->
+        <% link_to config[:app_url], class:'btn btn-primary shadow lift mr-1' do %>
+          <%= t('index.pricing.cta') %>
+          <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+        <% end %>
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+
+</section>
+
+<!-- SHAPE
+================================================== -->
+<div class="position-relative mt-n8">
+  <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0V480H2880V0H2160Z" fill="currentColor"/>
+    </svg>
+  </div>
+</div>
+
+<!-- TESTIMONIALS
+================================================== -->
+<section class="pt-10 pt-md-12 pb-8 bg-gray-200" id="temoignages-clients">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center">
+
+        <!-- Heading -->
+        <h2>
+          <%= t('index.testimonials.title') %>
+        </h2>
+
+        <!-- Text -->
+        <p class="font-size-lg text-muted mb-7 mb-md-9">
+          <%= t('index.testimonials.desc') %>
+        </p>
+
+      </div>
+    </div> <!-- / .row -->
+    <div class="row">
+      <div class="col-12">
+
+        <!-- Card -->
+        <div class="card card-row shadow-light-lg mb-6">
+          <div class="row no-gutters">
+            <div class="col-12 col-md-6">
+
+              <!-- Slider -->
+              <div class="card-img-slider" data-flickity='{"fade": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "asNavFor": "#blogSlider", "draggable": false}'>
+                <a class="card-img-left bg-cover" style="background-image: url(images/photos/tatiana.png);" href="#!">
+
+                  <!-- Image (placeholder) -->
+                  <%= image_tag 'photos/tatiana.png', class: 'img-fluid d-md-none invisible', alt: 'photo de Tatiana du wagon' %>
+
+                </a>
+                <a class="card-img-left bg-cover" style="background-image: url(images/photos/photo-26.jpg);" href="#!">
+
+                  <!-- Image (placeholder) -->
+                  <%= image_tag 'photos/photo-26.jpg', class: 'img-fluid d-md-none invisible', alt: 'photo de client' %>
+                </a>
+              </div>
+
+              <!-- Shape -->
+              <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                <%= include_svg('shapes/curves/curve-4.svg') %>
+              </div>
+
+            </div>
+            <div class="col-12 col-md-6 position-static">
+
+              <!-- Slider -->
+              <div class="position-static" data-flickity='{"wrapAround": true, "pageDots": false, "imagesLoaded": true, "adaptiveHeight": true}' id="blogSlider">
+                <div class="w-100">
+
+                  <!-- Body -->
+                  <div class="card-body">
+                    <blockquote class="blockquote text-center mb-0">
+
+                      <!-- Brand -->
+                      <div class="row justify-content-center mb-5 mb-md-7">
+                        <div class="col-6 col-sm-4 col-md-7 col-lg-5">
+
+                          <!-- Logo -->
+                          <div class="img-fluid svg-shim">
+                            <%= include_svg('brands/logotype/lewagon_color.svg') %>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                      <!-- Text -->
+                      <p class="mb-5 mb-md-7">
+                        <%= t('index.testimonials.testimonial_1.desc') %>
+                      </p>
+
+                      <!-- Footer -->
+                      <footer class="blockquote-footer">
+                        <span class="h6 text-uppercase"><%= t('index.testimonials.testimonial_1.author') %></span>
+                      </footer>
+
+                    </blockquote>
+                  </div>
+
+                </div>
+                <div class="w-100">
+
+                  <!-- Body -->
+                  <div class="card-body">
+                    <blockquote class="blockquote text-center mb-0">
+
+                      <!-- Brand -->
+                      <div class="row justify-content-center mb-5 mb-md-7">
+                        <div class="col-6 col-sm-4 col-md-7 col-lg-5">
+
+                          <!-- Logo -->
+                          <div class="img-fluid svg-shim">
+                            <%= include_svg('brands/logotype/uppler_color.svg') %>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                      <!-- Text -->
+                      <p class="mb-5 mb-md-7">
+                        <%= t('index.testimonials.testimonial_2.desc') %>
+                      </p>
+
+                      <!-- Footer -->
+                      <footer class="blockquote-footer">
+                        <span class="h6 text-uppercase"><%= t('index.testimonials.testimonial_2.author') %></span>
+                      </footer>
+
+                    </blockquote>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div> <!-- / .row -->
+        </div>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+<!-- SHAPE
+================================================== -->
+<div class="position-relative">
+  <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"/>
+    </svg>
+  </div>
+</div>
+
+<!-- FAQ
+================================================== -->
+<section class="py-8 pt-md-11 pb-md-6 bg-dark" id="questions-frequentes">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center">
+
+        <!-- Preheading -->
+        <h6 class="text-uppercase text-success font-weight-bold">
+          <%= t('index.faq.label') %>
+        </h6>
+
+        <!-- Heading -->
+        <h2 class="font-weight-bold text-white mb-7 mb-md-9">
+         <%= t('index.faq.title') %>
+        </h2>
+
+      </div>
+    </div> <!-- / .row -->
+    <div class="row">
+      <div class="col-12 col-md-6">
+
+        <!-- Item -->
+        <div class="d-flex">
+
+          <!-- Badge -->
+          <div class="badge badge-lg badge-rounded-circle badge-success">
+            <span>?</span>
+          </div>
+
+          <div class="ml-5">
+
+            <!-- Heading -->
+            <h4 class="text-white">
+              <%= t('index.faq.question_1') %>
+            </h4>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-8">
+              <%= t('index.faq.answer_1') %>
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- Item -->
+        <div class="d-flex">
+
+          <!-- Badge -->
+          <div class="badge badge-lg badge-rounded-circle badge-success">
+            <span>?</span>
+          </div>
+
+          <div class="ml-5">
+
+            <!-- Heading -->
+            <h4 class="text-white">
+              <%= t('index.faq.question_2') %>
+            </h4>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0">
+              <%= t('index.faq.answer_2') %>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-12 col-md-6">
+
+        <!-- Item -->
+        <div class="d-flex">
+
+          <!-- Badge -->
+          <div class="badge badge-lg badge-rounded-circle badge-success">
+            <span>?</span>
+          </div>
+
+          <div class="ml-5">
+
+            <!-- Heading -->
+            <h4 class="text-white">
+              <%= t('index.faq.question_3') %>
+            </h4>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-8">
+              <%= t('index.faq.answer_3') %>
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- Item -->
+        <div class="d-flex">
+
+          <!-- Badge -->
+          <div class="badge badge-lg badge-rounded-circle badge-success">
+            <span>?</span>
+          </div>
+
+          <div class="ml-5">
+
+            <!-- Heading -->
+            <h4 class="text-white">
+              <%= t('index.faq.question_4') %>
+            </h4>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0">
+              <%= t('index.faq.answer_4') %>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div> <!-- / .row -->
+    <div class="text-center mt-4">
+      <button onclick="$crisp.push(['do', 'chat:open'])" class="btn btn-secondary-soft mb-1"><%= t('index.faq.need_help') %><i class="text-center fe fe-message-circle ml-3"></i></button>
+    </div>
+  </div> <!-- / .container -->
+</section>
+
+
+<!-- CTA
+================================================== -->
+<section class="py-8 py-md-11 bg-dark">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center">
+
+        <!-- Badge -->
+        <span class="badge badge-pill badge-gray-700-soft mb-4">
+          <span class="h6 font-weight-bold text-uppercase"><%= t('index.cta.label') %></span>
+        </span>
+
+        <!-- Heading -->
+        <h2 class="display-4 text-white">
+         <%= t('index.cta.title') %>
+        </h2>
+
+        <!-- Text -->
+        <p class="font-size-lg text-muted mb-6 mb-md-8">
+          <%= t('index.cta.desc') %>
+        </p>
+
+        <!-- Button -->
+        <% link_to config[:app_url], class:'btn btn-success lift' do %>
+          <%= t('index.cta.cta') %>
+          <i class="fe fe-arrow-right ml-3"></i>
+        <% end %>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+<!-- SHAPE
+================================================== -->
+<div class="position-relative">
+  <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+    <%= include_svg('shapes/curves/curve-1.svg') %>
+  </div>
+</div>
+

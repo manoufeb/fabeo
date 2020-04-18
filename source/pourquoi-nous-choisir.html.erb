@@ -1,0 +1,279 @@
+<% content_for(:title, t('pourquoi-nous-choisir.meta.title')) %>
+<% content_for(:desc, t('pourquoi-nous-choisir.meta.desc')) %>
+<% content_for(:footer_color, 'bg-dark') %>
+
+<!-- HEADER
+================================================== -->
+<section class="py-8 py-md-11 border-bottom">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center">
+
+        <!-- Headin -->
+        <h1 class="display-2">
+          <%= t('pourquoi-nous-choisir.banner.h1') %>
+        </h1>
+
+        <!-- Text -->
+        <p class="lead text-muted mb-7 mb-md-9">
+          <%= t('pourquoi-nous-choisir.banner.desc') %>
+        </p>
+
+      </div>
+    </div> <!-- / .row -->
+    <div class="row">
+
+      <!-- François -->
+      <div class="col-12 col-md-6">
+
+        <div class="blockquote text-center">
+
+          <div class="blockquote-footer mb-8 mb-md-0">
+            <div class="avatar avatar-xl">
+              <%= image_tag '../images/avatars/avatar-2.jpg', class: 'avatar-img rounded-circle', alt: "avatar francois" %>
+            </div>
+          </div>
+
+          <p class="font-size-md text-muted mb-0 mb-5 mt-2">
+            <%= t('pourquoi-nous-choisir.case_1.desc') %>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Camille -->
+      <div class="col-12 col-md-6">
+        <div class="blockquote text-center">
+
+          <div class="blockquote-footer mb-8 mb-md-0">
+            <div class="avatar avatar-xl">
+              <%= image_tag '../images/avatars/avatar-3.jpg', class: 'avatar-img rounded-circle', alt: "avatar francois" %>
+            </div>
+          </div>
+
+          <p class="font-size-md text-muted mb-0 mb-5 mt-2">
+            <%= t('pourquoi-nous-choisir.case_2.desc') %>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 text-center mt-4 mb-4">
+        <span class="badge badge-pill badge-primary-soft mb-3">
+          <span class="h6 text-uppercase"><%= t('pourquoi-nous-choisir.monday') %></span>
+        </span>
+      </div>
+
+      <!-- François -->
+      <div class="col-12 col-md-6">
+        <% t('pourquoi-nous-choisir.case_1.part_1').each do |card| %>
+          <!-- Card -->
+          <div class="card card-border border-danger shadow-light-lg mb-6 mb-md-8" data-aos="fade-up">
+            <div class="card-body">
+
+              <!-- Heading -->
+              <h6 class="text-uppercase text-primary d-inline-block mb-5 mr-1">
+                <%= card[:hour] %>
+              </h6>
+
+              <% if card.has_key?(:badge) %>
+                <span class="badge badge-danger-soft">
+                  <span><%= card[:badge] %></span>
+                </span>
+              <% end %>
+
+              <div>
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item text-reset text-decoration-none">
+                    <p class="font-weight-bold mb-1">
+                      <%= card[:title] %>
+                    </p>
+                    <p class="font-size-sm text-muted mb-0">
+                      <%= card[:desc] %>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <% end %>
+      </div>
+
+      <!-- Camille -->
+      <div class="col-12 col-md-6">
+        <% t('pourquoi-nous-choisir.case_2.part_1').each_with_index do |card, index| %>
+          <!-- Card -->
+          <div class="card card-border border-success shadow-light-lg mb-6 mb-md-8 <%= 'badge-success-soft' if index == 4  %>" data-aos="fade-up">
+            <div class="card-body">
+
+              <% if card.has_key?(:hour) %>
+                <h6 class="text-uppercase text-primary d-inline-block mb-5 mr-1">
+                  <%= card[:hour] %>
+                </h6>
+              <% end %>
+
+              <% if card.has_key?(:badge) %>
+                <span class="badge badge-success-soft">
+                  <span><%= card[:badge] %></span>
+                </span>
+              <% end %>
+
+              <div>
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item text-reset text-decoration-none <%= 'bg-transparent' if index == 4 %>">
+                    <p class="font-weight-bold mb-1">
+                      <%= card[:title] %>
+                    </p>
+                    <p class="font-size-sm <%= 'text-muted' if index != 4 %> mb-0">
+                      <%= card[:desc] %>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <% end %>
+      </div>
+
+      <!-- Blank -->
+      <div class="col-12 text-center mt-4 mb-4">
+      </div>
+
+      <!-- François -->
+      <div class="col-12 col-md-6">
+        <% t('pourquoi-nous-choisir.case_1.part_2').each do |card| %>
+          <!-- Card -->
+          <div class="card card-border border-danger shadow-light-lg mb-6 mb-md-8" data-aos="fade-up">
+            <div class="card-body">
+
+              <!-- Heading -->
+              <h6 class="text-uppercase text-primary d-inline-block mb-5 mr-1">
+                <%= card[:hour] %>
+              </h6>
+
+              <% if card.has_key?(:badge) %>
+                <span class="badge badge-danger-soft">
+                  <span><%= card[:badge] %></span>
+                </span>
+              <% end %>
+
+              <div>
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item text-reset text-decoration-none">
+                    <p class="font-weight-bold mb-1">
+                      <%= card[:title] %>
+                    </p>
+                    <p class="font-size-sm text-muted mb-0">
+                      <%= card[:desc] %>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <% end %>
+      </div>
+
+
+      <!-- Mardi -->
+      <div class="col-12 text-center mt-4 mb-4">
+        <span class="badge badge-pill badge-primary-soft mb-3">
+          <span class="h6 text-uppercase"><%= t('pourquoi-nous-choisir.tuesday') %></span>
+        </span>
+      </div>
+
+      <!-- François -->
+      <div class="col-12 col-md-6">
+        <% t('pourquoi-nous-choisir.case_1.part_3').each_with_index do |card, index| %>
+          <!-- Card -->
+          <div class="card card-border border-danger shadow-light-lg mb-6 mb-md-8 <%= 'badge-danger-soft' if index == card.size %>" data-aos="fade-up">
+            <div class="card-body">
+
+              <% if card.has_key?(:hour) %>
+                <h6 class="text-uppercase text-primary d-inline-block mb-5 mr-1">
+                  <%= card[:hour] %>
+                </h6>
+              <% end %>
+
+              <% if card.has_key?(:badge) %>
+                <span class="badge badge-danger-soft">
+                  <span><%= card[:badge] %></span>
+                </span>
+              <% end %>
+
+              <div>
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item text-reset text-decoration-none <%= 'bg-transparent' if index == card.size%>">
+                    <p class="font-weight-bold mb-1">
+                      <%= card[:title] %>
+                    </p>
+                    <p class="font-size-sm <%= 'text-muted' if index != card.size%> mb-0">
+                      <%= card[:desc] %>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <% end %>
+      </div>
+
+      <!-- Blank -->
+      <div class="col-12 text-center mt-4 mb-4">
+      </div>
+
+      <div class="col-12 col-md-6">
+        <%= link_to t('pourquoi-nous-choisir.cta_slow'), 'https://support.office.com/en-us/article/print-labels-for-your-mailing-list-276a2cd1-74d2-43d0-ab5a-b90460358ad5?ui=en-US&rs=en-US&ad=US#MergeLabels=Windows', class: 'btn btn-block btn-danger lift', target: 'blank' %>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <%= link_to t('pourquoi-nous-choisir.cta_fast'), config[:app_url], class: 'btn btn-block btn-success lift' %>
+      </div>
+
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+<!-- SHAPE
+================================================== -->
+<div class="position-relative">
+  <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+    <%= include_svg('shapes/curves/curve-1.svg') %>
+  </div>
+</div>
+
+<!-- CTA
+================================================== -->
+<section class="py-8 py-md-11 bg-dark">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center">
+
+        <!-- Badge -->
+        <span class="badge badge-pill badge-gray-700-soft mb-4">
+          <span class="h6 font-weight-bold text-uppercase"><%= t('index.cta.label') %></span>
+        </span>
+
+        <!-- Heading -->
+        <h2 class="display-4 text-white">
+         <%= t('index.cta.title') %>
+        </h2>
+
+        <!-- Text -->
+        <p class="font-size-lg text-muted mb-6 mb-md-8">
+          <%= t('index.cta.desc') %>
+        </p>
+
+        <!-- Button -->
+        <% link_to config[:app_url], class:'btn btn-success lift' do %>
+          <%= t('index.cta.cta') %>
+          <i class="fe fe-arrow-right ml-3"></i>
+        <% end %>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>

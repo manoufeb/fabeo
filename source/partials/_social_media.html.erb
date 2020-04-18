@@ -1,0 +1,22 @@
+<!-- twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@badge_en_ligne" />
+<meta name="twitter:title" content="<%= content_for?(:title) ? yield_content(:title) : t('index.meta.title') %>" >
+<meta name="twitter:description" content="<%= content_for?(:desc) ? yield_content(:desc) : t('index.meta.desc') %>" >
+<meta name="twitter:image" content="<%= base_url + image_path('social/badge_en_ligne_twitter.png') %>" />
+<meta name="twitter:url" content="<%= full_url %>" >
+
+<!-- ogg -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Badge en Ligne" />
+<meta property="og:title" content="<%= content_for?(:title) ? yield_content(:title) : t('index.meta.title') %>" >
+<meta property="og:description" content="<%= content_for?(:desc) ? yield_content(:desc) : t('index.meta.desc') %>" >
+<meta property="og:image" content="<%= content_for?(:social_img) ? yield_content(:social_img) : base_url + image_path('social/badge_en_ligne_social.png') %>" >
+<meta property="og:url" content="<%= full_url %>" >
+<meta property="fb:pages" content="106733787500009" />
+
+
+<!-- linkedin  -->
+<meta property="og:title" content="<%= content_for?(:title) ? yield_content(:title) : t('index.meta.title') %>" />
+<meta property="og:description" content="<%= content_for?(:desc) ? yield_content(:desc) : t('index.meta.desc') %>" />
+<meta property="og:url" content="<%= full_url %>" />

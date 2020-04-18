@@ -1,0 +1,74 @@
+fr:
+  index:
+    meta:
+      title: "Badges nominatifs | Badge en ligne"
+      desc: "Commande et impression de badges en ligne simple et rapide. Badges Conférences - Badges Séminaires - Badges Salons -  Badges événements"
+    banner:
+      h1: 'Badges nominatifs<br>pour vos <span class="text-primary">évènements</span>.'
+      desc: "Créez vous-même des badges nominatifs pour vos conférences, séminaires, évènements, salons..."
+      main_cta: 'Commencer'
+      secondary_cta: 'Témoignages clients'
+    features:
+      - title: "Importez"
+        desc: "Importez votre liste de participants depuis un fichier Excel, CSV ou Google Sheets."
+        icon: "Files/Cloud-upload"
+      - title: "Editez"
+        desc: "Utilisez notre éditeur en ligne pour designer un badge à l’image de votre événement."
+        icon: "Text/Edit-text"
+      - title: "Imprimez"
+        desc: "Imprimez directement vos badges. Vous avez simplement besoin d'une imprimante standard."
+        icon: "Devices/Printer"
+    pricing:
+      tag: "Tarifs"
+      title: "Des prix <span class='text-success'>simples et transparents</span>"
+      desc: "Chez Badge en Ligne, pas de frais cachés, notre objectif est de rendre simple rapide la création de badges nominatifs !"
+      per_badge: "HT par badge"
+      cta: "Créez vos badges"
+      learn_more: "En savoir plus"
+      plans:
+        plan_1:
+          title: "Vous imprimez le pdf généré"
+          price: "0.25"
+          desc:
+            - "Rapide et économique"
+            - "Autonomie complète"
+            - "Design personnalisé"
+        plan_2:
+          title: "Badges autocollants livrés"
+          price: "0.99"
+          desc:
+            - "105mm x 70mm"
+            - "Livraison gratuite"
+            - "Design personnalisé"
+        plan_3:
+          title: "Badges suspendus livrés"
+          price: "1.79"
+          soon: "Bientôt disponible"
+          desc:
+            - "Ajouter un cordon noir pour 0,99€ pièce"
+    testimonials:
+      title: "Nos clients témoignent"
+      desc: "Découvrez pourquoi autant d’entreprises font confiance à Badge en Ligne pour simplifier leur création de badge pour évènements et conférences."
+      testimonial_1:
+        desc: "“Simple, flexible et rapide. Tous les ingrédients recherchés pour les gestionnaires d'événements, c'est pour ça que nous avons choisi de travailler avec Badge en Ligne.”"
+        author: "Tatiana, Partnerships Manager"
+      testimonial_2:
+        desc: "“Nous avons gagné un temps précieux pour chaque organisation d'évènement, l'application est très facile à prendre en main. Un service de qualité et une équipe au top !”"
+        author: "Max, Manager Field Marketing"
+    faq:
+      label: "Badges nominatifs en ligne"
+      title: "Questions fréquentes"
+      question_1: "Quels sont vos tarifs d'expédition et votre délai de livraison ?"
+      answer_1: "La livraison est gratuite en France métropolitaine. Vous serez livré en 3 jours ouvrables."
+      question_2: "Quel est le format des badges nominatifs adhésifs/autocollants ?"
+      answer_2: "Nous vous livrerons des badges de 105mm de large et 70mm de hauteur (105mmx70mm)."
+      question_3: "Quels formats sont les formats pour les badges pdf à imprimer chez soi ?"
+      answer_3: "Nous proposons 4 formats pour les badges pdf : 60x90 - 70x105 - 50x80 - 148x105 (A6)."
+      question_4: "Quel type d'imprimante est compatible pour les badges PDF ?"
+      answer_4: "Toutes les imprimantes sont compatibles !"
+      need_help: "Besoin d'aide ?"
+    cta:
+      label: "C'est parti !"
+      title: "Faites-le avec Badge en ligne"
+      desc: "Un service client toujours à votre écoute et des délais utlra rapide !"
+      cta: "Essayez gratuitement"

@@ -1,0 +1,48 @@
+fr:
+  badges-professionnels:
+    meta:
+      title: "Badges Professionnels | Badge en Ligne"
+      desc: "Badges professionnels et personnalisable en ligne en moins de 2 minutes, distribuez à vos participants des badges professionnels !"
+    banner:
+      h1: "Badges Professionnels"
+      desc: "Pour vos conférences ou autres évènements, faites des badges nominatifs personnalisés en 2 minutes avec une qualité professionnelle."
+    section-1:
+      label: "Bagdes nominatifs"
+      title: "Des badges professionnels <br> <span class='text-success'>facilement</span>."
+      desc: "Badge en Ligne c'est une application web qui va vous permettre de créer des badges nominatifs personnalisés à partir de votre liste de participants. Nous proposons une solution simple qui s'adapte à vos besoins professionnels."
+      feature_1: "Support 7/7"
+      feature_2: "Personnalisable"
+      feature_3: "Qualité"
+      feature_4: "Livraison gratuite"
+    section-2:
+      label: "Tailles de badges"
+      title: "Des formats adaptés <span class='text-info'>à tous les évènements</span> !"
+      desc: "Petit format, grand format ou même badge portrait, Badge en Ligne vous propose toute une gamme de badges professionnels de qualité."
+      formats:
+        - title: "50x80"
+          desc: "Badges petits et discrets, parfaits pour les badges adhésifs"
+        - title: "90x60"
+          desc: "Idéal pour des badges à épingles ou à suspendre"
+        - title: "105x70"
+          desc: "Pour des badges adhésifs grand format à votre image"
+        - title: "148x105 / A6"
+          desc: "Badges grand format, modernes et esthétiques"
+    section-3:
+      label: "Application"
+      title: "Une application <span class='text-primary'>simple & intuitive</span> !"
+      desc: "Grâce à notre application facile et rapide à prendre en main, 2 minutes vous suffiront à faire vos badges !"
+      features:
+      - title: "Importez"
+        desc: "Importez votre liste de participants depuis un fichier Excel, CSV ou Google sheets"
+        icon: "Files/Cloud-upload"
+      - title: "Editez"
+        desc: "Utilisez notre éditeur en ligne pour designer un badge à l’image de votre événement."
+        icon: "Text/Edit-text"
+      - title: "Imprimez ou faites-vous livrez"
+        desc: "Imprimez directement vos badges. Vous avez simplement besoin d'une imprimante standard. Nous pouvons aussi imprimer pour vous et vous livrer en 3 jours ouvrables !"
+        icon: "Devices/Printer"
+    cta:
+      title: "Créez vos badges professionnels en 2 minutes !"
+      desc: "Un service client toujours à votre écoute et des délais utlra rapide !"
+
+
