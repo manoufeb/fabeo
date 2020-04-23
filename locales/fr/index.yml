@@ -1,62 +1,97 @@
 fr:
   index:
     meta:
-      title: "Badges nominatifs | Badge en ligne"
-      desc: "Commande et impression de badges en ligne simple et rapide. Badges Conférences - Badges Séminaires - Badges Salons -  Badges événements"
+      title: "Fabeo | Solution de Gestion d’Atelier"
+      desc: "Traitez vos commandes. Suivez votre production. Gérez vos stocks. Centralisez vos factures"
     banner:
-      h1: 'Badges nominatifs<br>pour vos <span class="text-primary">évènements</span>.'
-      desc: "Créez vous-même des badges nominatifs pour vos conférences, séminaires, évènements, salons..."
-      main_cta: 'Commencer'
+      h1: "Solution de <br><span class='text-primary'>Gestion</span> d'Atelier."
+      desc: "Le premier logiciel spécialisé dans l'artisanat de création"
+      main_cta: 'Demander une démo'
       secondary_cta: 'Témoignages clients'
     features:
-      - title: "Importez"
-        desc: "Importez votre liste de participants depuis un fichier Excel, CSV ou Google Sheets."
-        icon: "Files/Cloud-upload"
-      - title: "Editez"
-        desc: "Utilisez notre éditeur en ligne pour designer un badge à l’image de votre événement."
-        icon: "Text/Edit-text"
-      - title: "Imprimez"
-        desc: "Imprimez directement vos badges. Vous avez simplement besoin d'une imprimante standard."
-        icon: "Devices/Printer"
+      - title: "Proche de vos besoin"
+        desc: "La solution a été conçue en collaboration avec des artisans d'art afin de répondre au mieux à vos attentes."
+        icon: "Communication/Group"
+      - title: "Une solution complète et accessible"
+        desc: "La solution est tout-en-un, évolutive, et accessible financièrement à tous les artisans."
+        icon: "Tools/Swiss-knife"
+      - title: "Facile à prendre en mains"
+        desc: "Le logiciel est en mode SAAS (accessible en ligne), conçu pour être facilement pris en mains"
+        icon: "General/Like"
+    solution:
+      all_in_one: "Une solution tout en un"
+      title: "Vos besoin regrouper dans un seul outil"
+      desc: "Fabeo est une solution en ligne de Gestion d'Atelier pour traiter vos commandes, vos ventes et gérer votre production"
+      features_1 :
+        - "Centralisation des commandes et des ventes"
+        - "Personnalisation du process de fabrication "
+      features_2 :
+        - "Gestion des stocks de produits finis"
+        - "Gestion des stocks de matières premières"
+      features_3 :
+        - "Alertes de stocks"
+        - "Gestion de base de données clients"
+      features_4 :
+        - "Factures: clients, fournisseurs et frais généraux"
+        - "Licence pour l’expert-comptable"
+
     pricing:
       tag: "Tarifs"
-      title: "Des prix <span class='text-success'>simples et transparents</span>"
-      desc: "Chez Badge en Ligne, pas de frais cachés, notre objectif est de rendre simple rapide la création de badges nominatifs !"
-      per_badge: "HT par badge"
-      cta: "Créez vos badges"
+      title: "Des prix <span class='text-primary'>simples et transparents</span>"
+      desc: "Chez Fabeo, pas de frais cachés, notre objectif est de rendre simple rapide la gestion de votre atelier !"
+      cta: "Demander une démo"
       learn_more: "En savoir plus"
       plans:
         plan_1:
-          title: "Vous imprimez le pdf généré"
-          price: "0.25"
+          title: "Engagement 1 mois"
+          price: "39"
           desc:
-            - "Rapide et économique"
-            - "Autonomie complète"
-            - "Design personnalisé"
+            - "Centralisation des commandes et des ventes"
+            - "Personnalisation du process de fabrication "
+            - "Gestion des stocks de produits finis"
+            - "Gestion des stocks de matières premières"
+            - "Alertes de stocks"
+            - "Base de données clients"
+            - "Centralisation de toutes les factures: clients, fournisseurs et frais généraux"
+            - "Licence d’accès supplémentaire pour l’expert-comptable"
         plan_2:
-          title: "Badges autocollants livrés"
-          price: "0.99"
+          title: "Engagement 6 mois"
+          price: "204"
+          per_month: "34€/mois"
+          popular: "Le plus populaire"
           desc:
-            - "105mm x 70mm"
-            - "Livraison gratuite"
-            - "Design personnalisé"
+            - "Centralisation des commandes et des ventes"
+            - "Personnalisation du process de fabrication "
+            - "Gestion des stocks de produits finis"
+            - "Gestion des stocks de matières premières"
+            - "Alertes de stocks"
+            - "Base de données clients"
+            - "Centralisation de toutes les factures: clients, fournisseurs et frais généraux"
+            - "Licence d’accès supplémentaire pour l’expert-comptable"
         plan_3:
-          title: "Badges suspendus livrés"
-          price: "1.79"
-          soon: "Bientôt disponible"
+          title: "Engagement 12 mois"
+          price: "348"
+          per_month: "29€/mois"
           desc:
-            - "Ajouter un cordon noir pour 0,99€ pièce"
+            - "Centralisation des commandes et des ventes"
+            - "Personnalisation du process de fabrication "
+            - "Gestion des stocks de produits finis"
+            - "Gestion des stocks de matières premières"
+            - "Alertes de stocks"
+            - "Base de données clients"
+            - "Centralisation de toutes les factures: clients, fournisseurs et frais généraux"
+            - "Licence d’accès supplémentaire pour l’expert-comptable"
     testimonials:
       title: "Nos clients témoignent"
-      desc: "Découvrez pourquoi autant d’entreprises font confiance à Badge en Ligne pour simplifier leur création de badge pour évènements et conférences."
+      desc: "Découvrez pourquoi les artisans font confiance à Fabeo pour simplifier leur gestion d'atelier"
       testimonial_1:
         desc: "“Simple, flexible et rapide. Tous les ingrédients recherchés pour les gestionnaires d'événements, c'est pour ça que nous avons choisi de travailler avec Badge en Ligne.”"
-        author: "Tatiana, Partnerships Manager"
+        author: "Damien Beal, Artisan d'art"
       testimonial_2:
         desc: "“Nous avons gagné un temps précieux pour chaque organisation d'évènement, l'application est très facile à prendre en main. Un service de qualité et une équipe au top !”"
         author: "Max, Manager Field Marketing"
     faq:
-      label: "Badges nominatifs en ligne"
+      label: "Outil de gestion d'atelier"
       title: "Questions fréquentes"
       question_1: "Quels sont vos tarifs d'expédition et votre délai de livraison ?"
       answer_1: "La livraison est gratuite en France métropolitaine. Vous serez livré en 3 jours ouvrables."
@@ -69,6 +104,6 @@ fr:
       need_help: "Besoin d'aide ?"
     cta:
       label: "C'est parti !"
-      title: "Faites-le avec Badge en ligne"
-      desc: "Un service client toujours à votre écoute et des délais utlra rapide !"
+      title: "Faites confiance à Fabeo"
+      desc: "Un service client toujours à votre écoute."
       cta: "Essayez gratuitement"

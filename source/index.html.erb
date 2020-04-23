@@ -13,7 +13,7 @@ priority: 1
 
         <!-- Image -->
         <div class="img-skewed img-skewed-left mb-8 mb-md-0">
-           <%= image_tag 'illustrations/illustration-badge.png', class: 'screenshot img-fluid mw-md-130', alt: 'illustration de badge', data: { aos: 'img-skewed-item-left', aos_delay: '100' } %>
+           <%= image_tag 'illustrations/plateform.png', class: 'screenshot img-fluid mw-md-130', alt: 'illustration de la solution', data: { aos: 'img-skewed-item-left', aos_delay: '100' } %>
         </div>
 
       </div>
@@ -73,54 +73,119 @@ priority: 1
   </div> <!-- / .container -->
 </section>
 
-<!-- CUSTOMERS
+<!-- SOLUTION
 ================================================== -->
-<section class="py-6 py-md-8 border-bottom">
+<section class="py-8 pt-md-11 pb-md-12 bg-dark">
   <div class="container">
-    <div class="row align-items-center justify-content-center">
-        <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center">
 
-        <!-- Brand -->
-        <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-          <%= include_svg('brands/logotype/sprinklr.svg') %>
-        </div>
+        <!-- Preheading -->
+        <h6 class="text-uppercase text-primary font-weight-bold">
+          <%= t('index.solution.all_in_one') %>
+        </h6>
 
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+        <!-- Heading -->
+        <h1 class="font-weight-bold text-white">
+          <%= t('index.solution.title') %>
+        </h1>
 
-        <!-- Brand -->
-        <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-          <%= include_svg('brands/logotype/lewagon.svg') %>
-        </div>
-
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-
-        <!-- Brand -->
-        <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-          <%= include_svg('brands/logotype/uppler.svg') %>
-        </div>
+        <!-- Text -->
+        <p class="font-size-lg text-gray-500 mb-7 mb-md-9">
+          <%= t('index.solution.desc') %>
+        </p>
 
       </div>
-      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+    </div> <!-- / .row -->
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
 
-        <!-- Brand -->
-        <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-          <%= include_svg('brands/logotype/spendesk.svg') %>
-        </div>
+        <% t('index.solution.features_1').each do |feature| %>
+          <!-- List -->
+          <div class="d-flex">
+
+
+            <!-- Badge -->
+            <div class="badge badge-rounded-circle badge-success mt-1 mr-4">
+              <i class="fe fe-check"></i>
+            </div>
+
+            <!-- Text -->
+            <p class="text-gray-300">
+              <%= feature %>
+            </p>
+
+          </div>
+        <% end %>
 
       </div>
-      <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
 
-        <!-- Brand -->
-        <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-          <%= include_svg('brands/logotype/aircall.svg') %>
-        </div>
+        <% t('index.solution.features_2').each do |feature| %>
+          <!-- List -->
+          <div class="d-flex">
+
+
+            <!-- Badge -->
+            <div class="badge badge-rounded-circle badge-success mt-1 mr-4">
+              <i class="fe fe-check"></i>
+            </div>
+
+            <!-- Text -->
+            <p class="text-gray-300">
+              <%= feature %>
+            </p>
+
+          </div>
+        <% end %>
+
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+
+        <% t('index.solution.features_3').each do |feature| %>
+          <!-- List -->
+          <div class="d-flex">
+
+
+            <!-- Badge -->
+            <div class="badge badge-rounded-circle badge-success mt-1 mr-4">
+              <i class="fe fe-check"></i>
+            </div>
+
+            <!-- Text -->
+            <p class="text-gray-300">
+              <%= feature %>
+            </p>
+
+          </div>
+        <% end %>
+
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+
+        <% t('index.solution.features_4').each do |feature| %>
+          <!-- List -->
+          <div class="d-flex">
+
+
+            <!-- Badge -->
+            <div class="badge badge-rounded-circle badge-success mt-1 mr-4">
+              <i class="fe fe-check"></i>
+            </div>
+
+            <!-- Text -->
+            <p class="text-gray-300">
+              <%= feature %>
+            </p>
+
+          </div>
+        <% end %>
 
       </div>
     </div> <!-- / .row -->
   </div> <!-- / .container -->
 </section>
+
 
 <!-- PRICING
 ================================================== -->
@@ -130,7 +195,7 @@ priority: 1
       <div class="col-12 col-md-10 col-lg-8 text-center">
 
         <!-- Badge -->
-        <span class="badge badge-pill badge-success-soft mb-3">
+        <span class="badge badge-pill badge-primary-soft mb-3">
           <span class="h6 text-uppercase">
             <%= t('index.pricing.tag') %>
           </span>
@@ -162,40 +227,15 @@ priority: 1
             <!-- Badge -->
             <h6 class="font-weight-bold text-uppercase text-center text-success mb-5"><%= t('index.pricing.plans.plan_1.title') %></h6>
 
-            <!-- Icon -->
-            <div class="icon text-primary mb-3 text-center">
-              <%= include_svg("icons/duotone-icons/Files/File-pdf.svg") %>
-            </div>
-
             <!-- Price -->
             <div class="d-flex justify-content-center">
               <span class="price display-2 mb-0"><%= t('index.pricing.plans.plan_1.price') %></span>
               <span class="h2 mb-0 mt-2">€</span>
             </div>
 
-            <!-- Text -->
-            <p class="text-center text-muted">
-              <%= t('index.pricing.per_badge') %>
-            </p>
-
-            <!-- List -->
-            <% t('index.pricing.plans.plan_1.desc').each do |feature| %>
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
-                <i class="fe fe-check"></i>
-              </span>
-
-              <!-- Text -->
-              <p>
-                <%= feature %>
-              </p>
-            </div>
-            <% end %>
             <!-- Link -->
             <div class="text-center mt-2">
-              <%= link_to t('index.pricing.learn_more'), 'badges-a-imprimer', class:'font-size-sm font-weight-bold text-decoration-none' %>
+              <%= link_to t('index.pricing.learn_more'), 'pricing', class:'font-size-sm font-weight-bold text-decoration-none' %>
             </div>
           </div>
         </div>
@@ -209,10 +249,6 @@ priority: 1
             <!-- Badge -->
             <h6 class="font-weight-bold text-uppercase text-info text-center mb-5"><%= t('index.pricing.plans.plan_2.title') %></h6>
 
-            <!-- Icon -->
-            <div class="icon text-primary mb-3 text-center">
-              <%= include_svg("icons/duotone-icons/Files/Adhesive-badge.svg") %>
-            </div>
 
             <!-- Price -->
             <div class="d-flex justify-content-center">
@@ -222,27 +258,20 @@ priority: 1
 
             <!-- Text -->
             <p class="text-center text-muted">
-              <%= t('index.pricing.per_badge') %>
+              <%= t('index.pricing.plans.plan_2.per_month') %>
             </p>
 
-            <!-- List -->
-            <% t('index.pricing.plans.plan_2.desc').each do |feature| %>
-              <div class="d-flex">
 
-                <!-- Badge -->
-                <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
-                  <i class="fe fe-check"></i>
-                </span>
+            <div class="text-center">
+              <!-- Badge -->
+              <span class="badge badge-pill badge-info-soft ml-auto">
+                <%= t('index.pricing.plans.plan_2.popular') %>
+              </span>
+            </div>
 
-                <!-- Text -->
-                <p>
-                  <%= feature %>
-                </p>
-              </div>
-            <% end %>
             <!-- Link -->
             <div class="text-center mt-2">
-              <%= link_to t('index.pricing.learn_more'), 'badges-adhesifs', class:'font-size-sm font-weight-bold text-decoration-none' %>
+              <%= link_to t('index.pricing.learn_more'), 'pricing', class:'font-size-sm font-weight-bold text-decoration-none' %>
             </div>
           </div>
         </div>
@@ -250,16 +279,11 @@ priority: 1
       <div class="col-12 col-md-4">
 
         <!-- Card -->
-        <div class="card card-border card-border-xl border-danger shadow-light-lg">
+        <div class="card card-border card-border-xl border-primary shadow-light-lg lift">
           <div class="card-body">
 
             <!-- Badge -->
-            <h6 class="font-weight-bold text-uppercase text-center mb-5 text-danger"><%= t('index.pricing.plans.plan_3.title') %></h6>
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3 text-center">
-              <%= include_svg("icons/duotone-icons/Files/Printed-badge.svg") %>
-            </div>
+            <h6 class="font-weight-bold text-uppercase text-center mb-5 text-primary"><%= t('index.pricing.plans.plan_3.title') %></h6>
 
             <!-- Price -->
             <div class="d-flex justify-content-center">
@@ -269,30 +293,12 @@ priority: 1
 
             <!-- Text -->
             <p class="text-center text-muted">
-              <%= t('index.pricing.per_badge') %>
+              <%= t('index.pricing.plans.plan_3.per_month') %>
             </p>
 
-            <!-- List -->
-            <% t('index.pricing.plans.plan_3.desc').each do |feature| %>
-              <div class="d-flex">
-
-                <!-- Badge -->
-                <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
-                  <i class="fe fe-check"></i>
-                </span>
-
-                <!-- Text -->
-                <p>
-                  <%= feature %>
-                </p>
-              </div>
-            <% end %>
-
-            <div class="text-center">
-              <!-- Badge -->
-              <span class="badge badge-pill badge-danger-soft ml-auto">
-                <%= t('index.pricing.plans.plan_3.soon') %>
-              </span>
+            <!-- Link -->
+            <div class="text-center mt-2">
+              <%= link_to t('index.pricing.learn_more'), 'pricing', class:'font-size-sm font-weight-bold text-decoration-none' %>
             </div>
 
           </div>
@@ -349,10 +355,10 @@ priority: 1
 
               <!-- Slider -->
               <div class="card-img-slider" data-flickity='{"fade": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "asNavFor": "#blogSlider", "draggable": false}'>
-                <a class="card-img-left bg-cover" style="background-image: url(images/photos/tatiana.png);" href="#!">
+                <a class="card-img-left bg-cover" style="background-image: url(images/photos/damien_beal.png);" href="#!">
 
                   <!-- Image (placeholder) -->
-                  <%= image_tag 'photos/tatiana.png', class: 'img-fluid d-md-none invisible', alt: 'photo de Tatiana du wagon' %>
+                  <%= image_tag 'photos/damien_beal.png', class: 'img-fluid d-md-none invisible', alt: 'photo de Damien Beal' %>
 
                 </a>
                 <a class="card-img-left bg-cover" style="background-image: url(images/photos/photo-26.jpg);" href="#!">
@@ -378,17 +384,6 @@ priority: 1
                   <div class="card-body">
                     <blockquote class="blockquote text-center mb-0">
 
-                      <!-- Brand -->
-                      <div class="row justify-content-center mb-5 mb-md-7">
-                        <div class="col-6 col-sm-4 col-md-7 col-lg-5">
-
-                          <!-- Logo -->
-                          <div class="img-fluid svg-shim">
-                            <%= include_svg('brands/logotype/lewagon_color.svg') %>
-                          </div>
-
-                        </div>
-                      </div> <!-- / .row -->
 
                       <!-- Text -->
                       <p class="mb-5 mb-md-7">
@@ -409,18 +404,6 @@ priority: 1
                   <!-- Body -->
                   <div class="card-body">
                     <blockquote class="blockquote text-center mb-0">
-
-                      <!-- Brand -->
-                      <div class="row justify-content-center mb-5 mb-md-7">
-                        <div class="col-6 col-sm-4 col-md-7 col-lg-5">
-
-                          <!-- Logo -->
-                          <div class="img-fluid svg-shim">
-                            <%= include_svg('brands/logotype/uppler_color.svg') %>
-                          </div>
-
-                        </div>
-                      </div> <!-- / .row -->
 
                       <!-- Text -->
                       <p class="mb-5 mb-md-7">
@@ -465,7 +448,7 @@ priority: 1
       <div class="col-12 col-md-10 col-lg-8 text-center">
 
         <!-- Preheading -->
-        <h6 class="text-uppercase text-success font-weight-bold">
+        <h6 class="text-uppercase text-primary font-weight-bold">
           <%= t('index.faq.label') %>
         </h6>
 
@@ -610,7 +593,7 @@ priority: 1
         </p>
 
         <!-- Button -->
-        <% link_to config[:app_url], class:'btn btn-success lift' do %>
+        <% link_to config[:app_url], class:'btn btn-primary lift' do %>
           <%= t('index.cta.cta') %>
           <i class="fe fe-arrow-right ml-3"></i>
         <% end %>
